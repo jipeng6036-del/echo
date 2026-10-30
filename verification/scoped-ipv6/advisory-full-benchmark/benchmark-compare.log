@@ -1,0 +1,173 @@
+goos: windows
+goarch: amd64
+pkg: github.com/labstack/echo/v5
+cpu: 13th Gen Intel(R) Core(TM) i7-13700F
+                                    │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-baseline.log │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-candidate.log │
+                                    │                                       sec/op                                        │                            sec/op                              vs base               │
+BindbindDataWithTags-4                                                                                       2.485µ ±  1%                                                    2.497µ ±  1%        ~ (p=0.110 n=8)
+DefaultBinder_BindInt64_single-4                                                                             89.66n ±  2%                                                    86.76n ±  2%   -3.22% (p=0.000 n=8)
+ValueBinder_BindInt64_single-4                                                                               31.04n ±  4%                                                    31.49n ± 15%        ~ (p=0.523 n=8)
+RawFunc_Int64_single-4                                                                                       24.90n ±  1%                                                    30.77n ± 18%  +23.55% (p=0.000 n=8)
+DefaultBinder_BindInt64_10_fields-4                                                                          569.0n ±  0%                                                    651.1n ± 21%  +14.44% (p=0.000 n=8)
+ValueBinder_BindInt64_10_fields-4                                                                            130.8n ±  4%                                                    135.9n ±  7%        ~ (p=0.328 n=8)
+AllocJSONP-4                                                                                                 282.4n ±  2%                                                    301.8n ±  5%   +6.87% (p=0.005 n=8)
+AllocJSON-4                                                                                                  212.1n ±  1%                                                    216.6n ±  2%   +2.12% (p=0.002 n=8)
+AllocXML-4                                                                                                   931.9n ±  4%                                                   1370.0n ± 26%  +47.01% (p=0.000 n=8)
+RealIPForHeaderXForwardFor-4                                                                                 26.98n ±  7%                                                    25.95n ± 26%        ~ (p=0.798 n=8)
+Context_Store-4                                                                                              34.17n ±  2%                                                    33.78n ±  1%        ~ (p=0.129 n=8)
+EchoStaticRoutes-4                                                                                           7.884µ ±  1%                                                    7.801µ ± 31%        ~ (p=0.700 n=8)
+EchoStaticRoutesMisses-4                                                                                     7.801µ ±  3%                                                   11.766µ ± 23%  +50.84% (p=0.000 n=8)
+EchoGitHubAPI-4                                                                                              16.03µ ±  2%                                                    17.22µ ± 19%   +7.45% (p=0.041 n=8)
+EchoGitHubAPIMisses-4                                                                                        16.11µ ±  1%                                                    23.57µ ± 16%  +46.25% (p=0.000 n=8)
+EchoParseAPI-4                                                                                               1.073µ ±  1%                                                    1.685µ ±  5%  +57.11% (p=0.000 n=8)
+ServeHTTP_Static-4                                                                                           31.39n ±  3%                                                    46.28n ±  4%  +47.45% (p=0.000 n=8)
+ServeHTTP_Param-4                                                                                            46.37n ±  1%                                                    52.40n ± 23%        ~ (p=0.105 n=8)
+ServeHTTP_Middleware-4                                                                                       40.35n ±  6%                                                    39.25n ±  8%        ~ (p=0.279 n=8)
+ServeHTTP_String-4                                                                                           195.2n ± 27%                                                    216.7n ± 32%        ~ (p=0.442 n=8)
+ServeHTTP_JSON-4                                                                                             479.4n ± 14%                                                    720.5n ± 10%  +50.28% (p=0.000 n=8)
+ServeHTTP_Store-4                                                                                            48.54n ±  3%                                                    77.01n ±  7%  +58.67% (p=0.000 n=8)
+Context_GetSet-4                                                                                             39.26n ±  3%                                                    47.24n ± 18%  +20.34% (p=0.010 n=8)
+Bind_JSON-4                                                                                                  571.5n ± 15%                                                    627.9n ± 10%        ~ (p=0.105 n=8)
+JSONDeserialize-4                                                                                            529.7n ± 14%                                                    477.1n ±  4%        ~ (p=0.105 n=8)
+JSONSerialize-4                                                                                              252.3n ± 19%                                                    289.6n ± 13%        ~ (p=0.161 n=8)
+Bind_Query-4                                                                                                 867.4n ± 18%                                                    814.6n ±  7%        ~ (p=0.279 n=8)
+QueryParam_FastPath-4                                                                                        42.68n ± 14%                                                    49.06n ± 15%  +14.95% (p=0.007 n=8)
+QueryParam_Map-4                                                                                             167.0n ±  5%                                                    201.1n ± 12%  +20.39% (p=0.000 n=8)
+RouterStaticRoutes-4                                                                                        11.249µ ± 39%                                                    8.090µ ± 24%        ~ (p=0.065 n=8)
+RouterStaticRoutesMisses-4                                                                                   466.2n ± 33%                                                    321.2n ±  3%  -31.11% (p=0.010 n=8)
+RouterGitHubAPI-4                                                                                            13.89µ ± 10%                                                    13.10µ ± 14%   -5.69% (p=0.050 n=8)
+RouterGitHubAPIMisses-4                                                                                      385.5n ±  3%                                                    427.2n ±  4%  +10.84% (p=0.007 n=8)
+RouterParseAPI-4                                                                                             1.357µ ±  5%                                                    1.240µ ±  5%   -8.62% (p=0.007 n=8)
+RouterParseAPIMisses-4                                                                                       234.5n ± 24%                                                    293.8n ± 24%        ~ (p=0.130 n=8)
+RouterGooglePlusAPI-4                                                                                        507.2n ±  4%                                                    652.6n ± 10%  +28.67% (p=0.000 n=8)
+RouterGooglePlusAPIMisses-4                                                                                  288.9n ±  4%                                                    459.9n ±  5%  +59.15% (p=0.000 n=8)
+RouterParamsAndAnyAPI-4                                                                                      1.182µ ±  1%                                                    1.752µ ± 16%  +48.18% (p=0.000 n=8)
+geomean                                                                                                      377.8n                                                          427.7n        +13.21%
+
+                                    │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-baseline.log │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-candidate.log │
+                                    │                                        B/op                                         │                             B/op                              vs base                │
+BindbindDataWithTags-4                                                                                      64.00 ±  0%                                                       64.00 ± 0%       ~ (p=1.000 n=8) ¹
+DefaultBinder_BindInt64_single-4                                                                            8.000 ±  0%                                                       8.000 ± 0%       ~ (p=1.000 n=8) ¹
+ValueBinder_BindInt64_single-4                                                                              0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RawFunc_Int64_single-4                                                                                      0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+DefaultBinder_BindInt64_10_fields-4                                                                         136.0 ±  0%                                                       136.0 ± 0%       ~ (p=1.000 n=8) ¹
+ValueBinder_BindInt64_10_fields-4                                                                           0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+AllocJSONP-4                                                                                                141.0 ± 52%                                                       145.0 ± 6%       ~ (p=0.667 n=8)
+AllocJSON-4                                                                                                 107.5 ±  2%                                                       107.0 ± 3%       ~ (p=0.947 n=8)
+AllocXML-4                                                                                                4.688Ki ±  0%                                                     4.651Ki ± 1%       ~ (p=0.459 n=8)
+EchoStaticRoutes-4                                                                                          0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+EchoStaticRoutesMisses-4                                                                                    0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+EchoGitHubAPI-4                                                                                             0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+EchoGitHubAPIMisses-4                                                                                       0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+EchoParseAPI-4                                                                                              0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_Static-4                                                                                          0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_Param-4                                                                                           0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_Middleware-4                                                                                      0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_String-4                                                                                          416.0 ±  0%                                                       416.0 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_JSON-4                                                                                            512.0 ±  0%                                                       512.0 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_Store-4                                                                                           0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+Context_GetSet-4                                                                                            7.000 ±  0%                                                       7.000 ± 0%       ~ (p=1.000 n=8) ¹
+Bind_JSON-4                                                                                                 64.00 ±  0%                                                       64.00 ± 0%       ~ (p=1.000 n=8) ¹
+JSONDeserialize-4                                                                                           64.00 ±  0%                                                       64.00 ± 0%       ~ (p=1.000 n=8) ¹
+JSONSerialize-4                                                                                             96.00 ±  0%                                                       96.00 ± 0%       ~ (p=1.000 n=8) ¹
+Bind_Query-4                                                                                                544.0 ±  0%                                                       544.0 ± 0%       ~ (p=1.000 n=8) ¹
+QueryParam_FastPath-4                                                                                       0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+QueryParam_Map-4                                                                                            64.00 ±  0%                                                       64.00 ± 0%       ~ (p=1.000 n=8) ¹
+RouterStaticRoutes-4                                                                                        0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterStaticRoutesMisses-4                                                                                  0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterGitHubAPI-4                                                                                           0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterGitHubAPIMisses-4                                                                                     0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterParseAPI-4                                                                                            0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterParseAPIMisses-4                                                                                      0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterGooglePlusAPI-4                                                                                       0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterGooglePlusAPIMisses-4                                                                                 0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterParamsAndAnyAPI-4                                                                                     0.000 ±  0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+geomean                                                                                                                 ²                                                                 +0.04%               ²
+¹ all samples are equal
+² summaries must be >0 to compute geomean
+
+                                    │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-baseline.log │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-candidate.log │
+                                    │                                      allocs/op                                      │                          allocs/op                            vs base                │
+BindbindDataWithTags-4                                                                                       2.000 ± 0%                                                       2.000 ± 0%       ~ (p=1.000 n=8) ¹
+DefaultBinder_BindInt64_single-4                                                                             1.000 ± 0%                                                       1.000 ± 0%       ~ (p=1.000 n=8) ¹
+ValueBinder_BindInt64_single-4                                                                               0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RawFunc_Int64_single-4                                                                                       0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+DefaultBinder_BindInt64_10_fields-4                                                                          3.000 ± 0%                                                       3.000 ± 0%       ~ (p=1.000 n=8) ¹
+ValueBinder_BindInt64_10_fields-4                                                                            0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+AllocJSONP-4                                                                                                 3.000 ± 0%                                                       3.000 ± 0%       ~ (p=1.000 n=8) ¹
+AllocJSON-4                                                                                                  2.000 ± 0%                                                       2.000 ± 0%       ~ (p=1.000 n=8) ¹
+AllocXML-4                                                                                                   9.000 ± 0%                                                       9.000 ± 0%       ~ (p=1.000 n=8) ¹
+EchoStaticRoutes-4                                                                                           0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+EchoStaticRoutesMisses-4                                                                                     0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+EchoGitHubAPI-4                                                                                              0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+EchoGitHubAPIMisses-4                                                                                        0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+EchoParseAPI-4                                                                                               0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_Static-4                                                                                           0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_Param-4                                                                                            0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_Middleware-4                                                                                       0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_String-4                                                                                           3.000 ± 0%                                                       3.000 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_JSON-4                                                                                             5.000 ± 0%                                                       5.000 ± 0%       ~ (p=1.000 n=8) ¹
+ServeHTTP_Store-4                                                                                            0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+Context_GetSet-4                                                                                             0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+Bind_JSON-4                                                                                                  1.000 ± 0%                                                       1.000 ± 0%       ~ (p=1.000 n=8) ¹
+JSONDeserialize-4                                                                                            1.000 ± 0%                                                       1.000 ± 0%       ~ (p=1.000 n=8) ¹
+JSONSerialize-4                                                                                              2.000 ± 0%                                                       2.000 ± 0%       ~ (p=1.000 n=8) ¹
+Bind_Query-4                                                                                                 8.000 ± 0%                                                       8.000 ± 0%       ~ (p=1.000 n=8) ¹
+QueryParam_FastPath-4                                                                                        0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+QueryParam_Map-4                                                                                             4.000 ± 0%                                                       4.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterStaticRoutes-4                                                                                         0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterStaticRoutesMisses-4                                                                                   0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterGitHubAPI-4                                                                                            0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterGitHubAPIMisses-4                                                                                      0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterParseAPI-4                                                                                             0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterParseAPIMisses-4                                                                                       0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterGooglePlusAPI-4                                                                                        0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterGooglePlusAPIMisses-4                                                                                  0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+RouterParamsAndAnyAPI-4                                                                                      0.000 ± 0%                                                       0.000 ± 0%       ~ (p=1.000 n=8) ¹
+geomean                                                                                                                 ²                                                                 +0.00%               ²
+¹ all samples are equal
+² summaries must be >0 to compute geomean
+
+pkg: github.com/labstack/echo/v5/middleware
+                                       │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-baseline.log │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-candidate.log │
+                                       │                                       sec/op                                        │                            sec/op                             vs base                │
+BodyDump_WithLimit-4                                                                                            2.278µ ±  6%                                                   2.511µ ± 18%   +10.23% (p=0.015 n=8)
+BodyDump_BufferPooling-4                                                                                        2.114µ ± 10%                                                   2.590µ ± 33%   +22.52% (p=0.007 n=8)
+Gzip-4                                                                                                          986.9n ±  7%                                                  1282.0n ± 18%   +29.90% (p=0.015 n=8)
+Decompress-4                                                                                                    2.582µ ± 19%                                                   4.378µ ± 23%   +69.54% (p=0.000 n=8)
+Decompress_WithLimit-4                                                                                          25.91µ ± 27%                                                   32.09µ ± 15%   +23.83% (p=0.050 n=8)
+RandomString_Unpooled-4                                                                                         120.5n ±  1%                                                   185.3n ± 40%   +53.71% (p=0.000 n=8)
+RandomString_Pooled-4                                                                                           118.9n ±  1%                                                   168.1n ± 23%   +41.38% (p=0.000 n=8)
+RateLimiterMemoryStore_1000-4                                                                                   1.244µ ± 17%                                                   1.590µ ± 22%   +27.77% (p=0.010 n=8)
+RateLimiterMemoryStore_10000-4                                                                                  1.697µ ±  6%                                                   2.639µ ± 52%   +55.56% (p=0.003 n=8)
+RateLimiterMemoryStore_100000-4                                                                                 2.952µ ± 16%                                                   8.938µ ± 73%  +202.81% (p=0.000 n=8)
+RateLimiterMemoryStore_conc100_10000-4                                                                          24.61µ ±  8%                                                   23.88µ ±  7%         ~ (p=0.279 n=8)
+RequestLogger_withoutMapFields-4                                                                                665.3n ± 18%                                                   868.8n ± 47%   +30.58% (p=0.010 n=8)
+RequestLogger_withMapFields-4                                                                                   1.411µ ± 14%                                                   1.750µ ± 59%   +23.99% (p=0.000 n=8)
+geomean                                                                                                         1.647µ                                                         2.297µ         +39.49%
+
+                                 │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-baseline.log │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-candidate.log │
+                                 │                                        B/op                                         │                             B/op                              vs base                │
+BodyDump_BufferPooling-4                                                                                  9.713Ki ± 0%                                                   9.713Ki ± 0%       ~ (p=0.695 n=8)
+Gzip-4                                                                                                    1.686Ki ± 4%                                                   1.685Ki ± 5%       ~ (p=0.666 n=8)
+Decompress-4                                                                                              10.18Ki ± 0%                                                   10.18Ki ± 0%       ~ (p=0.702 n=8)
+Decompress_WithLimit-4                                                                                    87.73Ki ± 0%                                                   87.73Ki ± 0%       ~ (p=0.387 n=8)
+RandomString_Unpooled-4                                                                                     80.00 ± 0%                                                     80.00 ± 0%       ~ (p=1.000 n=8) ¹
+RandomString_Pooled-4                                                                                       32.00 ± 0%                                                     32.00 ± 0%       ~ (p=1.000 n=8) ¹
+RequestLogger_withoutMapFields-4                                                                          1.289Ki ± 0%                                                   1.289Ki ± 0%       ~ (p=1.000 n=8) ¹
+RequestLogger_withMapFields-4                                                                             2.914Ki ± 0%                                                   2.914Ki ± 0%       ~ (p=1.000 n=8) ¹
+geomean                                                                                                   1.845Ki                                                        1.845Ki       -0.01%
+¹ all samples are equal
+
+                                 │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-baseline.log │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\benchmark-candidate.log │
+                                 │                                      allocs/op                                      │                          allocs/op                            vs base                │
+BodyDump_BufferPooling-4                                                                                    36.00 ± 0%                                                     36.00 ± 0%       ~ (p=1.000 n=8) ¹
+Gzip-4                                                                                                      16.00 ± 0%                                                     16.00 ± 0%       ~ (p=1.000 n=8) ¹
+Decompress-4                                                                                                25.00 ± 0%                                                     25.00 ± 0%       ~ (p=1.000 n=8) ¹
+Decompress_WithLimit-4                                                                                      43.00 ± 0%                                                     43.00 ± 0%       ~ (p=1.000 n=8) ¹
+RandomString_Unpooled-4                                                                                     2.000 ± 0%                                                     2.000 ± 0%       ~ (p=1.000 n=8) ¹
+RandomString_Pooled-4                                                                                       1.000 ± 0%                                                     1.000 ± 0%       ~ (p=1.000 n=8) ¹
+RequestLogger_withoutMapFields-4                                                                            13.00 ± 0%                                                     13.00 ± 0%       ~ (p=1.000 n=8) ¹
+RequestLogger_withMapFields-4                                                                               24.00 ± 0%                                                     24.00 ± 0%       ~ (p=1.000 n=8) ¹
+geomean                                                                                                     11.84                                                          11.84       +0.00%
+¹ all samples are equal

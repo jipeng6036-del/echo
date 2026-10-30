@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-30T03:02:09.606401+00:00",
+  "method": "High-confidence token/private-key patterns plus private-path scan across every selected text artifact and every ZIP member; no values printed",
+  "findings": [
+    {
+      "file": "modules/proxy/github.com/labstack/echo/v5/@v/v5.4.3-0.20261029045006-4deac5da0714.zip!github.com/labstack/echo/v5@v5.4.3-0.20261029045006-4deac5da0714/_fixture/certs/key.pem",
+      "pattern": "private-key",
+      "classification": "unchanged upstream public TLS test fixture",
+      "valueNotPrinted": true,
+      "sha256": "2fbf633bc958ef1c2a4579403af838c8ae68cc121d8bb0c94cabcc0892c31924"
+    },
+    {
+      "file": "modules/proxy/github.com/labstack/echo/v5/@v/v5.4.3-0.20261030023608-42d7b17d99c0.zip!github.com/labstack/echo/v5@v5.4.3-0.20261030023608-42d7b17d99c0/_fixture/certs/key.pem",
+      "pattern": "private-key",
+      "classification": "unchanged upstream public TLS test fixture",
+      "valueNotPrinted": true,
+      "sha256": "2fbf633bc958ef1c2a4579403af838c8ae68cc121d8bb0c94cabcc0892c31924"
+    }
+  ],
+  "unexpectedFindings": [],
+  "result": "PASS_NO_NEW_CREDENTIAL_OR_PRIVATE_PATH_FINDING",
+  "limits": "Pattern scan is evidence, not a guarantee; exact ZIP contents are also matched to selected public Git commits. Fixed upstream TLS fixture is explicitly allowlisted by unchanged SHA256."
+}

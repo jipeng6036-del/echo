@@ -1,0 +1,26 @@
+[
+  {
+    "workflow": ".github/workflows/ci.yml",
+    "unchanged": true,
+    "baseline": {
+      "blob": "9036eee291d3077e04143b75a57c30d92cddcdcc",
+      "sha256": "e587901d35f4c54e5877424e8129ee893587e42a1f2b6374d064641c545e2374"
+    },
+    "candidate": {
+      "blob": "9036eee291d3077e04143b75a57c30d92cddcdcc",
+      "sha256": "e587901d35f4c54e5877424e8129ee893587e42a1f2b6374d064641c545e2374"
+    }
+  },
+  {
+    "workflow": ".github/workflows/checks.yml",
+    "unchanged": true,
+    "baseline": {
+      "blob": "a0daa6f3a7ed0321385506e5cf34265ef2c9231d",
+      "sha256": "7e34170ddd3f8aef7013d5c17cc064160759d1b0572bd4350669dcd27fc845c3"
+    },
+    "candidate": {
+      "blob": "a0daa6f3a7ed0321385506e5cf34265ef2c9231d",
+      "sha256": "7e34170ddd3f8aef7013d5c17cc064160759d1b0572bd4350669dcd27fc845c3"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+	"Path": "github.com/labstack/echo/v5",
+	"Version": "v5.4.3-0.20261029045006-4deac5da0714",
+	"Time": "2026-10-29T04:50:06Z",
+	"Dir": "/evidence/cache-linux/github.com/labstack/echo/v5@v5.4.3-0.20261029045006-4deac5da0714",
+	"GoMod": "/evidence/cache-linux/cache/download/github.com/labstack/echo/v5/@v/v5.4.3-0.20261029045006-4deac5da0714.mod",
+	"GoVersion": "1.25.0",
+	"Sum": "h1:h9PV5AaL0oTZ+1jDBcUSyXQwlw7wiMGwamyci+/DicM=",
+	"GoModSum": "h1:4iEGNQiPPZnkfYpNR/L6fINd3NLiGWUD5+eBotFALas="
+}

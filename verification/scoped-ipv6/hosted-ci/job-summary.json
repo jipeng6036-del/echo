@@ -1,0 +1,1030 @@
+[
+  {
+    "run": "CI",
+    "id": 123861000781,
+    "name": "ubuntu-latest @ Go 1.26",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-30T02:44:38Z",
+        "completed_at": "2026-10-30T02:44:40Z"
+      },
+      {
+        "name": "Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-30T02:44:40Z",
+        "completed_at": "2026-10-30T02:44:41Z"
+      },
+      {
+        "name": "Set up Go 1.26",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-30T02:44:41Z",
+        "completed_at": "2026-10-30T02:44:42Z"
+      },
+      {
+        "name": "Find Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-30T02:44:42Z",
+        "completed_at": "2026-10-30T02:44:42Z"
+      },
+      {
+        "name": "Restore Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-30T02:44:42Z",
+        "completed_at": "2026-10-30T02:44:43Z"
+      },
+      {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:43Z",
+        "completed_at": "2026-10-30T02:45:25Z"
+      },
+      {
+        "name": "Save Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-30T02:45:25Z",
+        "completed_at": "2026-10-30T02:45:28Z"
+      },
+      {
+        "name": "Upload coverage to Codecov",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-10-30T02:45:28Z",
+        "completed_at": "2026-10-30T02:45:28Z"
+      },
+      {
+        "name": "Post Set up Go 1.26",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-10-30T02:45:28Z",
+        "completed_at": "2026-10-30T02:45:28Z"
+      },
+      {
+        "name": "Post Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-10-30T02:45:28Z",
+        "completed_at": "2026-10-30T02:45:28Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-10-30T02:45:28Z",
+        "completed_at": "2026-10-30T02:45:28Z"
+      }
+    ],
+    "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861000781",
+    "rawLogBytes": 24655,
+    "stderr": ""
+  },
+  {
+    "run": "CI",
+    "id": 123861000959,
+    "name": "ubuntu-latest @ Go 1.25",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-30T02:44:38Z",
+        "completed_at": "2026-10-30T02:44:41Z"
+      },
+      {
+        "name": "Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-30T02:44:41Z",
+        "completed_at": "2026-10-30T02:44:42Z"
+      },
+      {
+        "name": "Set up Go 1.25",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-30T02:44:42Z",
+        "completed_at": "2026-10-30T02:44:43Z"
+      },
+      {
+        "name": "Find Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-30T02:44:43Z",
+        "completed_at": "2026-10-30T02:44:43Z"
+      },
+      {
+        "name": "Restore Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-30T02:44:43Z",
+        "completed_at": "2026-10-30T02:44:44Z"
+      },
+      {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:44Z",
+        "completed_at": "2026-10-30T02:45:19Z"
+      },
+      {
+        "name": "Save Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-30T02:45:19Z",
+        "completed_at": "2026-10-30T02:45:22Z"
+      },
+      {
+        "name": "Upload coverage to Codecov",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-10-30T02:45:22Z",
+        "completed_at": "2026-10-30T02:45:22Z"
+      },
+      {
+        "name": "Post Set up Go 1.25",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-10-30T02:45:22Z",
+        "completed_at": "2026-10-30T02:45:22Z"
+      },
+      {
+        "name": "Post Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-10-30T02:45:22Z",
+        "completed_at": "2026-10-30T02:45:22Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-10-30T02:45:22Z",
+        "completed_at": "2026-10-30T02:45:22Z"
+      }
+    ],
+    "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861000959",
+    "rawLogBytes": 24647,
+    "stderr": ""
+  },
+  {
+    "run": "CI",
+    "id": 123861000960,
+    "name": "macos-latest @ Go 1.27",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-30T02:44:41Z",
+        "completed_at": "2026-10-30T02:44:44Z"
+      },
+      {
+        "name": "Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-30T02:44:44Z",
+        "completed_at": "2026-10-30T02:44:46Z"
+      },
+      {
+        "name": "Set up Go 1.27",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-30T02:44:46Z",
+        "completed_at": "2026-10-30T02:44:56Z"
+      },
+      {
+        "name": "Find Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-30T02:44:56Z",
+        "completed_at": "2026-10-30T02:44:56Z"
+      },
+      {
+        "name": "Restore Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-30T02:44:56Z",
+        "completed_at": "2026-10-30T02:44:57Z"
+      },
+      {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:57Z",
+        "completed_at": "2026-10-30T02:45:21Z"
+      },
+      {
+        "name": "Save Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-30T02:45:21Z",
+        "completed_at": "2026-10-30T02:45:23Z"
+      },
+      {
+        "name": "Upload coverage to Codecov",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-10-30T02:45:23Z",
+        "completed_at": "2026-10-30T02:45:23Z"
+      },
+      {
+        "name": "Post Set up Go 1.27",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-10-30T02:45:23Z",
+        "completed_at": "2026-10-30T02:45:23Z"
+      },
+      {
+        "name": "Post Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-10-30T02:45:23Z",
+        "completed_at": "2026-10-30T02:45:23Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-10-30T02:45:23Z",
+        "completed_at": "2026-10-30T02:45:25Z"
+      }
+    ],
+    "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861000960",
+    "rawLogBytes": 26306,
+    "stderr": ""
+  },
+  {
+    "run": "CI",
+    "id": 123861000996,
+    "name": "ubuntu-latest @ Go 1.27",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-30T02:44:38Z",
+        "completed_at": "2026-10-30T02:44:40Z"
+      },
+      {
+        "name": "Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-30T02:44:40Z",
+        "completed_at": "2026-10-30T02:44:43Z"
+      },
+      {
+        "name": "Set up Go 1.27",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-30T02:44:43Z",
+        "completed_at": "2026-10-30T02:44:51Z"
+      },
+      {
+        "name": "Find Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-30T02:44:51Z",
+        "completed_at": "2026-10-30T02:44:51Z"
+      },
+      {
+        "name": "Restore Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-30T02:44:51Z",
+        "completed_at": "2026-10-30T02:44:51Z"
+      },
+      {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:51Z",
+        "completed_at": "2026-10-30T02:45:18Z"
+      },
+      {
+        "name": "Save Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-30T02:45:18Z",
+        "completed_at": "2026-10-30T02:45:23Z"
+      },
+      {
+        "name": "Upload coverage to Codecov",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-10-30T02:45:23Z",
+        "completed_at": "2026-10-30T02:45:26Z"
+      },
+      {
+        "name": "Post Set up Go 1.27",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-10-30T02:45:26Z",
+        "completed_at": "2026-10-30T02:45:26Z"
+      },
+      {
+        "name": "Post Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-10-30T02:45:26Z",
+        "completed_at": "2026-10-30T02:45:26Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-10-30T02:45:26Z",
+        "completed_at": "2026-10-30T02:45:26Z"
+      }
+    ],
+    "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861000996",
+    "rawLogBytes": 51545,
+    "stderr": ""
+  },
+  {
+    "run": "CI",
+    "id": 123861001005,
+    "name": "windows-latest @ Go 1.25",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-30T02:44:38Z",
+        "completed_at": "2026-10-30T02:44:40Z"
+      },
+      {
+        "name": "Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-30T02:44:40Z",
+        "completed_at": "2026-10-30T02:44:45Z"
+      },
+      {
+        "name": "Set up Go 1.25",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-30T02:44:45Z",
+        "completed_at": "2026-10-30T02:44:49Z"
+      },
+      {
+        "name": "Find Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-30T02:44:49Z",
+        "completed_at": "2026-10-30T02:44:49Z"
+      },
+      {
+        "name": "Restore Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-30T02:44:49Z",
+        "completed_at": "2026-10-30T02:44:50Z"
+      },
+      {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:50Z",
+        "completed_at": "2026-10-30T02:45:32Z"
+      },
+      {
+        "name": "Save Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-30T02:45:32Z",
+        "completed_at": "2026-10-30T02:45:36Z"
+      },
+      {
+        "name": "Upload coverage to Codecov",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-10-30T02:45:36Z",
+        "completed_at": "2026-10-30T02:45:36Z"
+      },
+      {
+        "name": "Post Set up Go 1.25",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-10-30T02:45:36Z",
+        "completed_at": "2026-10-30T02:45:36Z"
+      },
+      {
+        "name": "Post Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-10-30T02:45:36Z",
+        "completed_at": "2026-10-30T02:45:38Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-10-30T02:45:38Z",
+        "completed_at": "2026-10-30T02:45:38Z"
+      }
+    ],
+    "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861001005",
+    "rawLogBytes": 24978,
+    "stderr": ""
+  },
+  {
+    "run": "CI",
+    "id": 123861001008,
+    "name": "macos-latest @ Go 1.25",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-30T02:44:37Z",
+        "completed_at": "2026-10-30T02:44:39Z"
+      },
+      {
+        "name": "Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-30T02:44:39Z",
+        "completed_at": "2026-10-30T02:44:41Z"
+      },
+      {
+        "name": "Set up Go 1.25",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-30T02:44:41Z",
+        "completed_at": "2026-10-30T02:44:43Z"
+      },
+      {
+        "name": "Find Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-30T02:44:43Z",
+        "completed_at": "2026-10-30T02:44:43Z"
+      },
+      {
+        "name": "Restore Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-30T02:44:43Z",
+        "completed_at": "2026-10-30T02:44:43Z"
+      },
+      {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:43Z",
+        "completed_at": "2026-10-30T02:45:06Z"
+      },
+      {
+        "name": "Save Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-30T02:45:06Z",
+        "completed_at": "2026-10-30T02:45:09Z"
+      },
+      {
+        "name": "Upload coverage to Codecov",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-10-30T02:45:09Z",
+        "completed_at": "2026-10-30T02:45:09Z"
+      },
+      {
+        "name": "Post Set up Go 1.25",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-10-30T02:45:09Z",
+        "completed_at": "2026-10-30T02:45:09Z"
+      },
+      {
+        "name": "Post Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-10-30T02:45:09Z",
+        "completed_at": "2026-10-30T02:45:09Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-10-30T02:45:09Z",
+        "completed_at": "2026-10-30T02:45:10Z"
+      }
+    ],
+    "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861001008",
+    "rawLogBytes": 25496,
+    "stderr": ""
+  },
+  {
+    "run": "CI",
+    "id": 123861001032,
+    "name": "windows-latest @ Go 1.27",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-30T02:44:39Z",
+        "completed_at": "2026-10-30T02:44:41Z"
+      },
+      {
+        "name": "Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-30T02:44:41Z",
+        "completed_at": "2026-10-30T02:44:46Z"
+      },
+      {
+        "name": "Set up Go 1.27",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-30T02:44:46Z",
+        "completed_at": "2026-10-30T02:45:10Z"
+      },
+      {
+        "name": "Find Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-30T02:45:10Z",
+        "completed_at": "2026-10-30T02:45:11Z"
+      },
+      {
+        "name": "Restore Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-30T02:45:11Z",
+        "completed_at": "2026-10-30T02:45:11Z"
+      },
+      {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:45:11Z",
+        "completed_at": "2026-10-30T02:45:58Z"
+      },
+      {
+        "name": "Save Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-30T02:45:58Z",
+        "completed_at": "2026-10-30T02:46:02Z"
+      },
+      {
+        "name": "Upload coverage to Codecov",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-10-30T02:46:02Z",
+        "completed_at": "2026-10-30T02:46:02Z"
+      },
+      {
+        "name": "Post Set up Go 1.27",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-10-30T02:46:02Z",
+        "completed_at": "2026-10-30T02:46:02Z"
+      },
+      {
+        "name": "Post Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-10-30T02:46:02Z",
+        "completed_at": "2026-10-30T02:46:05Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-10-30T02:46:05Z",
+        "completed_at": "2026-10-30T02:46:05Z"
+      }
+    ],
+    "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861001032",
+    "rawLogBytes": 26566,
+    "stderr": ""
+  },
+  {
+    "run": "CI",
+    "id": 123861001057,
+    "name": "windows-latest @ Go 1.26",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-30T02:44:38Z",
+        "completed_at": "2026-10-30T02:44:41Z"
+      },
+      {
+        "name": "Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-30T02:44:41Z",
+        "completed_at": "2026-10-30T02:44:47Z"
+      },
+      {
+        "name": "Set up Go 1.26",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-30T02:44:47Z",
+        "completed_at": "2026-10-30T02:44:53Z"
+      },
+      {
+        "name": "Find Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-30T02:44:53Z",
+        "completed_at": "2026-10-30T02:44:53Z"
+      },
+      {
+        "name": "Restore Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-30T02:44:53Z",
+        "completed_at": "2026-10-30T02:44:54Z"
+      },
+      {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:54Z",
+        "completed_at": "2026-10-30T02:45:53Z"
+      },
+      {
+        "name": "Save Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-30T02:45:53Z",
+        "completed_at": "2026-10-30T02:45:58Z"
+      },
+      {
+        "name": "Upload coverage to Codecov",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-10-30T02:45:58Z",
+        "completed_at": "2026-10-30T02:45:58Z"
+      },
+      {
+        "name": "Post Set up Go 1.26",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-10-30T02:45:58Z",
+        "completed_at": "2026-10-30T02:45:58Z"
+      },
+      {
+        "name": "Post Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-10-30T02:45:58Z",
+        "completed_at": "2026-10-30T02:46:00Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-10-30T02:46:00Z",
+        "completed_at": "2026-10-30T02:46:00Z"
+      }
+    ],
+    "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861001057",
+    "rawLogBytes": 24977,
+    "stderr": ""
+  },
+  {
+    "run": "CI",
+    "id": 123861001191,
+    "name": "macos-latest @ Go 1.26",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-30T02:44:40Z",
+        "completed_at": "2026-10-30T02:44:43Z"
+      },
+      {
+        "name": "Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-30T02:44:43Z",
+        "completed_at": "2026-10-30T02:44:46Z"
+      },
+      {
+        "name": "Set up Go 1.26",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-30T02:44:46Z",
+        "completed_at": "2026-10-30T02:44:50Z"
+      },
+      {
+        "name": "Find Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-30T02:44:50Z",
+        "completed_at": "2026-10-30T02:44:50Z"
+      },
+      {
+        "name": "Restore Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-30T02:44:50Z",
+        "completed_at": "2026-10-30T02:44:51Z"
+      },
+      {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:51Z",
+        "completed_at": "2026-10-30T02:45:35Z"
+      },
+      {
+        "name": "Save Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-30T02:45:35Z",
+        "completed_at": "2026-10-30T02:45:44Z"
+      },
+      {
+        "name": "Upload coverage to Codecov",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-10-30T02:45:44Z",
+        "completed_at": "2026-10-30T02:45:44Z"
+      },
+      {
+        "name": "Post Set up Go 1.26",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-10-30T02:45:44Z",
+        "completed_at": "2026-10-30T02:45:44Z"
+      },
+      {
+        "name": "Post Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-10-30T02:45:44Z",
+        "completed_at": "2026-10-30T02:45:45Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-10-30T02:45:45Z",
+        "completed_at": "2026-10-30T02:45:46Z"
+      }
+    ],
+    "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861001191",
+    "rawLogBytes": 25650,
+    "stderr": ""
+  },
+  {
+    "run": "CI",
+    "id": 123861480049,
+    "name": "Benchmark comparison",
+    "status": "completed",
+    "conclusion": "skipped",
+    "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+    "steps": [],
+    "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861480049"
+  },
+  {
+    "run": "Checks",
+    "id": 123861000453,
+    "name": "check",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-10-30T02:44:38Z",
+        "completed_at": "2026-10-30T02:44:40Z"
+      },
+      {
+        "name": "Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-10-30T02:44:40Z",
+        "completed_at": "2026-10-30T02:44:41Z"
+      },
+      {
+        "name": "Set up Go",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-10-30T02:44:41Z",
+        "completed_at": "2026-10-30T02:44:49Z"
+      },
+      {
+        "name": "Find Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-10-30T02:44:49Z",
+        "completed_at": "2026-10-30T02:44:49Z"
+      },
+      {
+        "name": "Restore Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-10-30T02:44:49Z",
+        "completed_at": "2026-10-30T02:44:50Z"
+      },
+      {
+        "name": "Run golint",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:50Z",
+        "completed_at": "2026-10-30T02:44:59Z"
+      },
+      {
+        "name": "Run staticcheck",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-10-30T02:44:59Z",
+        "completed_at": "2026-10-30T02:45:28Z"
+      },
+      {
+        "name": "Run govulncheck",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-10-30T02:45:28Z",
+        "completed_at": "2026-10-30T02:45:35Z"
+      },
+      {
+        "name": "Save Go Cache",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-10-30T02:45:35Z",
+        "completed_at": "2026-10-30T02:45:39Z"
+      },
+      {
+        "name": "Post Set up Go",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-10-30T02:45:39Z",
+        "completed_at": "2026-10-30T02:45:39Z"
+      },
+      {
+        "name": "Post Checkout Code",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 18,
+        "started_at": "2026-10-30T02:45:39Z",
+        "completed_at": "2026-10-30T02:45:40Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 19,
+        "started_at": "2026-10-30T02:45:40Z",
+        "completed_at": "2026-10-30T02:45:40Z"
+      }
+    ],
+    "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443248/job/123861000453",
+    "rawLogBytes": 26925,
+    "stderr": ""
+  }
+]

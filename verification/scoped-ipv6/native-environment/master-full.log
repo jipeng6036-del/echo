@@ -1,0 +1,128 @@
+{"time":"2026-10-29T19:25:21.5989407-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:21.5989407-07:00","level":"INFO","msg":"http(s) server started","address":"[::]:10186"}
+--- FAIL: TestRealIPScopedIPv6ThroughHTTP (0.00s)
+    --- FAIL: TestRealIPScopedIPv6ThroughHTTP/explicit_range_trusts_scoped_peer_with_default_trust_disabled (0.00s)
+        ip_http_test.go:94: 
+            	Error Trace:	<workspace>/ci-evidence/pr4-discovery-20261030-0205/lane-go/baseline/ip_http_test.go:94
+            	Error:      	Not equal: 
+            	            	expected: "198.51.100.7"
+            	            	actual  : "fe80::1%eth0"
+            	            	
+            	            	Diff:
+            	            	--- Expected
+            	            	+++ Actual
+            	            	@@ -1 +1 @@
+            	            	-198.51.100.7
+            	            	+fe80::1%eth0
+            	Test:       	TestRealIPScopedIPv6ThroughHTTP/explicit_range_trusts_scoped_peer_with_default_trust_disabled
+    --- FAIL: TestRealIPScopedIPv6ThroughHTTP/repeated_fields_stop_at_nearest_untrusted_scoped_hop (0.00s)
+        ip_http_test.go:94: 
+            	Error Trace:	<workspace>/ci-evidence/pr4-discovery-20261030-0205/lane-go/baseline/ip_http_test.go:94
+            	Error:      	Not equal: 
+            	            	expected: "2001:db8::5"
+            	            	actual  : "fe80::1%eth0"
+            	            	
+            	            	Diff:
+            	            	--- Expected
+            	            	+++ Actual
+            	            	@@ -1 +1 @@
+            	            	-2001:db8::5
+            	            	+fe80::1%eth0
+            	Test:       	TestRealIPScopedIPv6ThroughHTTP/repeated_fields_stop_at_nearest_untrusted_scoped_hop
+--- FAIL: TestSchemeScopedIPv6ThroughHTTP (0.00s)
+    --- FAIL: TestSchemeScopedIPv6ThroughHTTP/IPv4_with_zone-like_suffix_cannot_set_forwarded_scheme (0.00s)
+        ip_http_test.go:138: 
+            	Error Trace:	<workspace>/ci-evidence/pr4-discovery-20261030-0205/lane-go/baseline/ip_http_test.go:138
+            	Error:      	Not equal: 
+            	            	expected: "http"
+            	            	actual  : "https"
+            	            	
+            	            	Diff:
+            	            	--- Expected
+            	            	+++ Actual
+            	            	@@ -1 +1 @@
+            	            	-http
+            	            	+https
+            	Test:       	TestSchemeScopedIPv6ThroughHTTP/IPv4_with_zone-like_suffix_cannot_set_forwarded_scheme
+{"time":"2026-10-29T19:25:21.6874896-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:21.6874896-07:00","level":"INFO","msg":"http(s) server started","address":"[::]:10310"}
+{"time":"2026-10-29T19:25:21.6883138-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:21.6883138-07:00","level":"INFO","msg":"http(s) server started","address":"[::]:10314"}
+{"time":"2026-10-29T19:25:21.689424-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:21.689424-07:00","level":"INFO","msg":"http(s) server started","address":"[::]:10318"}
+{"time":"2026-10-29T19:25:21.8412689-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:21.8412689-07:00","level":"INFO","msg":"http(s) server started","address":"[::]:10322"}
+{"time":"2026-10-29T19:25:21.8428323-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:21.8428323-07:00","level":"INFO","msg":"http(s) server started","address":"[::]:10323"}
+{"time":"2026-10-29T19:25:21.8433561-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:21.8433561-07:00","level":"INFO","msg":"http(s) server started","address":"[::]:10324"}
+{"time":"2026-10-29T19:25:21.8496987-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:21.8496987-07:00","level":"INFO","msg":"http(s) server started","address":"127.0.0.1:10325"}
+{"time":"2026-10-29T19:25:21.8496987-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:21.8496987-07:00","level":"INFO","msg":"http(s) server started","address":"[::1]:10327"}
+{"time":"2026-10-29T19:25:21.8496987-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:21.8496987-07:00","level":"INFO","msg":"http(s) server started","address":"127.0.0.1:10329"}
+{"time":"2026-10-29T19:25:21.8510249-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:21.8510249-07:00","level":"INFO","msg":"http(s) server started","address":"[::1]:10331"}
+--- FAIL: TestStartConfig_WithListenerNetwork (0.01s)
+    --- FAIL: TestStartConfig_WithListenerNetwork/tcp_ipv6_address (0.00s)
+        server_test.go:475: 
+            	Error Trace:	<workspace>/ci-evidence/pr4-discovery-20261030-0205/lane-go/baseline/server_test.go:475
+            	Error:      	Received unexpected error:
+            	            	Get "http://[::1]:10327/ok": dial tcp [::1]:10327: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.
+            	Test:       	TestStartConfig_WithListenerNetwork/tcp_ipv6_address
+        server_test.go:476: 
+            	Error Trace:	<workspace>/ci-evidence/pr4-discovery-20261030-0205/lane-go/baseline/server_test.go:476
+            	Error:      	Not equal: 
+            	            	expected: 200
+            	            	actual  : 0
+            	Test:       	TestStartConfig_WithListenerNetwork/tcp_ipv6_address
+        server_test.go:477: 
+            	Error Trace:	<workspace>/ci-evidence/pr4-discovery-20261030-0205/lane-go/baseline/server_test.go:477
+            	Error:      	Not equal: 
+            	            	expected: "OK"
+            	            	actual  : ""
+            	            	
+            	            	Diff:
+            	            	--- Expected
+            	            	+++ Actual
+            	            	@@ -1 +1 @@
+            	            	-OK
+            	            	+
+            	Test:       	TestStartConfig_WithListenerNetwork/tcp_ipv6_address
+    --- FAIL: TestStartConfig_WithListenerNetwork/tcp6_ipv6_address (0.00s)
+        server_test.go:475: 
+            	Error Trace:	<workspace>/ci-evidence/pr4-discovery-20261030-0205/lane-go/baseline/server_test.go:475
+            	Error:      	Received unexpected error:
+            	            	Get "http://[::1]:10331/ok": dial tcp [::1]:10331: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.
+            	Test:       	TestStartConfig_WithListenerNetwork/tcp6_ipv6_address
+        server_test.go:476: 
+            	Error Trace:	<workspace>/ci-evidence/pr4-discovery-20261030-0205/lane-go/baseline/server_test.go:476
+            	Error:      	Not equal: 
+            	            	expected: 200
+            	            	actual  : 0
+            	Test:       	TestStartConfig_WithListenerNetwork/tcp6_ipv6_address
+        server_test.go:477: 
+            	Error Trace:	<workspace>/ci-evidence/pr4-discovery-20261030-0205/lane-go/baseline/server_test.go:477
+            	Error:      	Not equal: 
+            	            	expected: "OK"
+            	            	actual  : ""
+            	            	
+            	            	Diff:
+            	            	--- Expected
+            	            	+++ Actual
+            	            	@@ -1 +1 @@
+            	            	-OK
+            	            	+
+            	Test:       	TestStartConfig_WithListenerNetwork/tcp6_ipv6_address
+{"time":"2026-10-29T19:25:22.2527305-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:22.2527305-07:00","level":"INFO","msg":"http(s) server started","address":"[::]:10342"}
+{"time":"2026-10-29T19:25:22.2637118-07:00","level":"INFO","msg":"Echo (v5.4.2). High performance, minimalist Go web framework https://echo.labstack.com","version":"5.4.2"}
+{"time":"2026-10-29T19:25:22.2637118-07:00","level":"INFO","msg":"http(s) server started","address":"[::]:10345"}
+{"time":"2026-10-29T19:25:22.2689627-07:00","level":"ERROR","msg":"http: TLS handshake error from 127.0.0.1:10347: tls: client requested unsupported application protocols ([\"h2\"])"}
+FAIL
+coverage: 96.4% of statements
+FAIL	github.com/labstack/echo/v5	0.902s
+ok  	github.com/labstack/echo/v5/echotest	0.035s	coverage: 93.7% of statements
+ok  	github.com/labstack/echo/v5/middleware	1.448s	coverage: 94.6% of statements
+FAIL

@@ -1,0 +1,30 @@
+goos: windows
+goarch: amd64
+pkg: scoped-ip-benchmark
+cpu: 13th Gen Intel(R) Core(TM) i7-13700F
+                   │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\optimization\benchmark-source.log │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\optimization\benchmark-optimized.log │
+                   │                                             sec/op                                             │                                   sec/op                                    vs base               │
+XFFIPv4-4                                                                                               141.1n ± 1%                                                                  145.8n ± 4%   +3.40% (p=0.001 n=8)
+XFFScopedIPv6-4                                                                                         289.8n ± 1%                                                                  224.2n ± 5%  -22.62% (p=0.000 n=8)
+SchemeScopedIPv6-4                                                                                      187.9n ± 1%                                                                  122.3n ± 2%  -34.90% (p=0.000 n=8)
+geomean                                                                                                 197.3n                                                                       158.8n       -19.54%
+
+                   │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\optimization\benchmark-source.log │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\optimization\benchmark-optimized.log │
+                   │                                              B/op                                              │                                 B/op                                   vs base                    │
+XFFIPv4-4                                                                                                64.00 ± 0%                                                              64.00 ± 0%         ~ (p=1.000 n=8) ¹
+XFFScopedIPv6-4                                                                                          72.00 ± 0%                                                              64.00 ± 0%   -11.11% (p=0.000 n=8)
+SchemeScopedIPv6-4                                                                                       8.000 ± 0%                                                              0.000 ± 0%  -100.00% (p=0.000 n=8)
+geomean                                                                                                  33.28                                                                               ?                      ² ³
+¹ all samples are equal
+² summaries must be >0 to compute geomean
+³ ratios must be >0 to compute geomean
+
+                   │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\optimization\benchmark-source.log │ <workspace>\ci-evidence\pr4-discovery-20261030-0205\lane-go\optimization\benchmark-optimized.log │
+                   │                                           allocs/op                                            │                               allocs/op                                vs base                    │
+XFFIPv4-4                                                                                                3.000 ± 0%                                                              3.000 ± 0%         ~ (p=1.000 n=8) ¹
+XFFScopedIPv6-4                                                                                          4.000 ± 0%                                                              3.000 ± 0%   -25.00% (p=0.000 n=8)
+SchemeScopedIPv6-4                                                                                       1.000 ± 0%                                                              0.000 ± 0%  -100.00% (p=0.000 n=8)
+geomean                                                                                                  2.289                                                                               ?                      ² ³
+¹ all samples are equal
+² summaries must be >0 to compute geomean
+³ ratios must be >0 to compute geomean

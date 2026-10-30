@@ -1,0 +1,345 @@
+2026-10-30T02:44:38.8868736Z Current runner version: '2.338.0'
+2026-10-30T02:44:38.8892953Z ##[group]Runner Image Provisioner
+2026-10-30T02:44:38.8893839Z Hosted Compute Agent
+2026-10-30T02:44:38.8894587Z Version: 20261021.618
+2026-10-30T02:44:38.8895272Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-30T02:44:38.8896016Z Build Date: 2026-10-21T00:45:21Z
+2026-10-30T02:44:38.8896997Z Worker ID: {1eecfcbc-f41e-409c-866c-cdd026274f2e}
+2026-10-30T02:44:38.8897764Z Region: westus
+2026-10-30T02:44:38.8898337Z Cloud: Azure
+2026-10-30T02:44:38.8898957Z ##[endgroup]
+2026-10-30T02:44:38.8900684Z ##[group]Operating System
+2026-10-30T02:44:38.8901399Z Ubuntu
+2026-10-30T02:44:38.8901967Z 24.04.5
+2026-10-30T02:44:38.8902528Z LTS
+2026-10-30T02:44:38.8903201Z ##[endgroup]
+2026-10-30T02:44:38.8903938Z ##[group]Runner Image
+2026-10-30T02:44:38.8904586Z Image: ubuntu-24.04
+2026-10-30T02:44:38.8905184Z Version: 20261025.353.1
+2026-10-30T02:44:38.8906522Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-30T02:44:38.8908368Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+2026-10-30T02:44:38.8909402Z ##[endgroup]
+2026-10-30T02:44:38.8910584Z ##[group]GITHUB_TOKEN Permissions
+2026-10-30T02:44:38.8912493Z Contents: read
+2026-10-30T02:44:38.8913150Z Metadata: read
+2026-10-30T02:44:38.8913716Z ##[endgroup]
+2026-10-30T02:44:38.8915775Z Secret source: Actions
+2026-10-30T02:44:38.8917032Z Cache mode: write
+2026-10-30T02:44:38.8917853Z Prepare workflow directory
+2026-10-30T02:44:38.9368880Z Prepare all required actions
+2026-10-30T02:44:38.9419013Z Getting action download info
+2026-10-30T02:44:39.2962044Z Download action repository 'actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10' (SHA:df4cb1c069e1874edd31b4311f1884172cec0e10)
+2026-10-30T02:44:39.4335294Z Download action repository 'actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16' (SHA:924ae3a1cded613372ab5595356fb5720e22ba16)
+2026-10-30T02:44:39.7904894Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-10-30T02:44:39.9974824Z Complete job name: check
+2026-10-30T02:44:40.0837853Z ##[group]Run actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+2026-10-30T02:44:40.0838966Z with:
+2026-10-30T02:44:40.0839421Z   repository: jipeng6036-del/echo
+2026-10-30T02:44:40.0843281Z   token: ***
+2026-10-30T02:44:40.0843708Z   ssh-strict: true
+2026-10-30T02:44:40.0844146Z   ssh-user: git
+2026-10-30T02:44:40.0844589Z   persist-credentials: true
+2026-10-30T02:44:40.0845075Z   clean: true
+2026-10-30T02:44:40.0845516Z   sparse-checkout-cone-mode: true
+2026-10-30T02:44:40.0846085Z   fetch-depth: 1
+2026-10-30T02:44:40.0846512Z   fetch-tags: false
+2026-10-30T02:44:40.0847156Z   show-progress: true
+2026-10-30T02:44:40.0847612Z   lfs: false
+2026-10-30T02:44:40.0848024Z   submodules: false
+2026-10-30T02:44:40.0848471Z   set-safe-directory: true
+2026-10-30T02:44:40.0849211Z env:
+2026-10-30T02:44:40.0849624Z   LATEST_GO_VERSION: 1.27
+2026-10-30T02:44:40.0850333Z   CHECKOUT_ACTION: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+2026-10-30T02:44:40.0851297Z   SETUP_GO_ACTION: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+2026-10-30T02:44:40.0852268Z   CACHE_RESTORE_ACTION: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:40.0853265Z   CACHE_SAVE_ACTION: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:40.0854000Z ##[endgroup]
+2026-10-30T02:44:40.3436332Z Syncing repository: jipeng6036-del/echo
+2026-10-30T02:44:40.3439195Z ##[group]Getting Git version info
+2026-10-30T02:44:40.3440337Z Working directory is '/home/runner/work/echo/echo'
+2026-10-30T02:44:40.3441868Z [command]/usr/bin/git version
+2026-10-30T02:44:40.3518843Z git version 2.56.0
+2026-10-30T02:44:40.3546007Z ##[endgroup]
+2026-10-30T02:44:40.3561644Z Temporarily overriding HOME='/home/runner/work/_temp/60be387e-6659-4aa9-9764-078451f1f437' before making global git config changes
+2026-10-30T02:44:40.3564075Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-30T02:44:40.3566541Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/echo/echo
+2026-10-30T02:44:40.3620879Z Deleting the contents of '/home/runner/work/echo/echo'
+2026-10-30T02:44:40.3625895Z ##[group]Determining repository object format
+2026-10-30T02:44:40.3628726Z ##[endgroup]
+2026-10-30T02:44:40.3629773Z ##[group]Initializing the repository
+2026-10-30T02:44:40.3633734Z [command]/usr/bin/git init /home/runner/work/echo/echo
+2026-10-30T02:44:40.3752105Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-30T02:44:40.3753791Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-30T02:44:40.3754789Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-30T02:44:40.3755550Z hint: call:
+2026-10-30T02:44:40.3755960Z hint:
+2026-10-30T02:44:40.3757007Z hint: 	git config --global init.defaultBranch <name>
+2026-10-30T02:44:40.3758154Z hint:
+2026-10-30T02:44:40.3759146Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-30T02:44:40.3760703Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-30T02:44:40.3761545Z hint:
+2026-10-30T02:44:40.3761978Z hint: 	git branch -m <name>
+2026-10-30T02:44:40.3762795Z hint:
+2026-10-30T02:44:40.3763966Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-30T02:44:40.3765705Z Initialized empty Git repository in /home/runner/work/echo/echo/.git/
+2026-10-30T02:44:40.3779615Z [command]/usr/bin/git remote add origin https://github.com/jipeng6036-del/echo
+2026-10-30T02:44:40.3829759Z ##[endgroup]
+2026-10-30T02:44:40.3831013Z ##[group]Disabling automatic garbage collection
+2026-10-30T02:44:40.3833609Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-30T02:44:40.3872072Z ##[endgroup]
+2026-10-30T02:44:40.3873616Z ##[group]Setting up auth
+2026-10-30T02:44:40.3874516Z Removing SSH command configuration
+2026-10-30T02:44:40.3881773Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-30T02:44:40.3924935Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-30T02:44:40.4318158Z Removing HTTP extra header
+2026-10-30T02:44:40.4327189Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-30T02:44:40.4377464Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-30T02:44:40.4623724Z Removing includeIf entries pointing to credentials config files
+2026-10-30T02:44:40.4631036Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-30T02:44:40.4675930Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-30T02:44:40.4920938Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-30T02:44:40.4969677Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/echo/echo/.git.path /home/runner/work/_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:44:40.5013997Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/echo/echo/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:44:40.5058310Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:44:40.5102920Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:44:40.5142060Z ##[endgroup]
+2026-10-30T02:44:40.5143464Z ##[group]Fetching the repository
+2026-10-30T02:44:40.5152424Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +42d7b17d99c0678ac22fe44076a4c94769964fc6:refs/remotes/origin/master
+2026-10-30T02:44:40.9983658Z From https://github.com/jipeng6036-del/echo
+2026-10-30T02:44:40.9986076Z  * [new ref]         42d7b17d99c0678ac22fe44076a4c94769964fc6 -> origin/master
+2026-10-30T02:44:41.0000486Z [command]/usr/bin/git branch --list --remote origin/master
+2026-10-30T02:44:41.0040613Z   origin/master
+2026-10-30T02:44:41.0052319Z [command]/usr/bin/git rev-parse refs/remotes/origin/master
+2026-10-30T02:44:41.0086906Z 42d7b17d99c0678ac22fe44076a4c94769964fc6
+2026-10-30T02:44:41.0093545Z ##[endgroup]
+2026-10-30T02:44:41.0095630Z ##[group]Determining the checkout info
+2026-10-30T02:44:41.0098305Z ##[endgroup]
+2026-10-30T02:44:41.0099589Z [command]/usr/bin/git sparse-checkout disable
+2026-10-30T02:44:41.0160589Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-30T02:44:41.0201998Z ##[group]Checking out the ref
+2026-10-30T02:44:41.0205379Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+2026-10-30T02:44:41.0384730Z Reset branch 'master'
+2026-10-30T02:44:41.0391015Z branch 'master' set up to track 'origin/master'.
+2026-10-30T02:44:41.0397851Z ##[endgroup]
+2026-10-30T02:44:41.0445800Z [command]/usr/bin/git log -1 --format=%H
+2026-10-30T02:44:41.0480459Z 42d7b17d99c0678ac22fe44076a4c94769964fc6
+2026-10-30T02:44:41.0925607Z ##[group]Run actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+2026-10-30T02:44:41.0927464Z with:
+2026-10-30T02:44:41.0928270Z   go-version: 1.27
+2026-10-30T02:44:41.0929157Z   check-latest: true
+2026-10-30T02:44:41.0930056Z   cache: false
+2026-10-30T02:44:41.0940327Z   token: ***
+2026-10-30T02:44:41.0941141Z env:
+2026-10-30T02:44:41.0941927Z   LATEST_GO_VERSION: 1.27
+2026-10-30T02:44:41.0943393Z   CHECKOUT_ACTION: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+2026-10-30T02:44:41.0945553Z   SETUP_GO_ACTION: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+2026-10-30T02:44:41.0947924Z   CACHE_RESTORE_ACTION: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:41.0950255Z   CACHE_SAVE_ACTION: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:41.0951932Z ##[endgroup]
+2026-10-30T02:44:41.2299202Z Setup go version spec 1.27
+2026-10-30T02:44:41.2303817Z Attempting to resolve the latest version from the manifest...
+2026-10-30T02:44:41.8672171Z matching 1.27...
+2026-10-30T02:44:41.8706293Z Resolved as '1.27.3'
+2026-10-30T02:44:41.8723135Z Attempting to download 1.27.3...
+2026-10-30T02:44:42.5246243Z matching 1.27.3...
+2026-10-30T02:44:42.5258084Z Acquiring 1.27.3 from https://github.com/actions/go-versions/releases/download/1.27.3-39437817176/go-1.27.3-linux-x64.tar.gz
+2026-10-30T02:44:42.9923994Z Extracting Go...
+2026-10-30T02:44:43.0057098Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/72cac73f-2be3-4ab6-9880-8dfd890121c8 -f /home/runner/work/_temp/c5573e93-cc3d-4b60-bc10-169e95bf80e7
+2026-10-30T02:44:44.7153734Z Successfully extracted go to /home/runner/work/_temp/72cac73f-2be3-4ab6-9880-8dfd890121c8
+2026-10-30T02:44:44.7154986Z Adding to the cache ...
+2026-10-30T02:44:49.5088491Z Successfully cached go to /opt/hostedtoolcache/go/1.27.3/x64
+2026-10-30T02:44:49.5089572Z Added go to the path
+2026-10-30T02:44:49.5092332Z Successfully set up Go version 1.27
+2026-10-30T02:44:49.5347581Z go version go1.27.3 linux/amd64
+2026-10-30T02:44:49.5347808Z 
+2026-10-30T02:44:49.5348164Z ##[group]go env
+2026-10-30T02:44:49.6648831Z AR='ar'
+2026-10-30T02:44:49.6649309Z CC='gcc'
+2026-10-30T02:44:49.6649655Z CGO_CFLAGS='-O2 -g'
+2026-10-30T02:44:49.6650053Z CGO_CPPFLAGS=''
+2026-10-30T02:44:49.6650640Z CGO_CXXFLAGS='-O2 -g'
+2026-10-30T02:44:49.6650884Z CGO_ENABLED='1'
+2026-10-30T02:44:49.6651112Z CGO_FFLAGS='-O2 -g'
+2026-10-30T02:44:49.6651361Z CGO_LDFLAGS='-O2 -g'
+2026-10-30T02:44:49.6651591Z CXX='g++'
+2026-10-30T02:44:49.6651789Z GCCGO='gccgo'
+2026-10-30T02:44:49.6652002Z GO111MODULE=''
+2026-10-30T02:44:49.6652214Z GOAMD64='v1'
+2026-10-30T02:44:49.6652423Z GOARCH='amd64'
+2026-10-30T02:44:49.6652631Z GOAUTH='netrc'
+2026-10-30T02:44:49.6652893Z GOBIN='/home/runner/go/bin'
+2026-10-30T02:44:49.6653195Z GOCACHE='/home/runner/.cache/go-build'
+2026-10-30T02:44:49.6653478Z GOCACHEPROG=''
+2026-10-30T02:44:49.6653723Z GODEBUG=''
+2026-10-30T02:44:49.6653967Z GOENV='/home/runner/.config/go/env'
+2026-10-30T02:44:49.6654301Z GOEXE=''
+2026-10-30T02:44:49.6654576Z GOEXPERIMENT=''
+2026-10-30T02:44:49.6654796Z GOFIPS140='off'
+2026-10-30T02:44:49.6655001Z GOFLAGS=''
+2026-10-30T02:44:49.6655750Z GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build724905791=/tmp/go-build -gno-record-gcc-switches'
+2026-10-30T02:44:49.6656497Z GOHOSTARCH='amd64'
+2026-10-30T02:44:49.6657007Z GOHOSTOS='linux'
+2026-10-30T02:44:49.6657230Z GOINSECURE=''
+2026-10-30T02:44:49.6657474Z GOMOD='/home/runner/work/echo/echo/go.mod'
+2026-10-30T02:44:49.6657806Z GOMODCACHE='/home/runner/go/pkg/mod'
+2026-10-30T02:44:49.6658074Z GONOPROXY=''
+2026-10-30T02:44:49.6658277Z GONOSUMDB=''
+2026-10-30T02:44:49.6658471Z GOOS='linux'
+2026-10-30T02:44:49.6658674Z GOPACKAGESDRIVER=''
+2026-10-30T02:44:49.6658910Z GOPATH='/home/runner/go'
+2026-10-30T02:44:49.6659138Z GOPRIVATE=''
+2026-10-30T02:44:49.6659405Z GOPROXY='https://proxy.golang.org,direct'
+2026-10-30T02:44:49.6659972Z GOROOT='/opt/hostedtoolcache/go/1.27.3/x64'
+2026-10-30T02:44:49.6660306Z GOSUMDB='sum.golang.org'
+2026-10-30T02:44:49.6660549Z GOTELEMETRY='local'
+2026-10-30T02:44:49.6660825Z GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+2026-10-30T02:44:49.6661138Z GOTMPDIR=''
+2026-10-30T02:44:49.6661342Z GOTOOLCHAIN='local'
+2026-10-30T02:44:49.6661682Z GOTOOLDIR='/opt/hostedtoolcache/go/1.27.3/x64/pkg/tool/linux_amd64'
+2026-10-30T02:44:49.6662039Z GOVCS=''
+2026-10-30T02:44:49.6662236Z GOVERSION='go1.27.3'
+2026-10-30T02:44:49.6662451Z GOWORK=''
+2026-10-30T02:44:49.6662675Z PKG_CONFIG='pkg-config'
+2026-10-30T02:44:49.6662829Z 
+2026-10-30T02:44:49.6663176Z ##[endgroup]
+2026-10-30T02:44:49.6892830Z ##[group]Run {
+2026-10-30T02:44:49.6893122Z [36;1m{[0m
+2026-10-30T02:44:49.6893353Z [36;1m  echo "build=$(go env GOCACHE)"[0m
+2026-10-30T02:44:49.6893676Z [36;1m  echo "mod=$(go env GOMODCACHE)"[0m
+2026-10-30T02:44:49.6894056Z [36;1m  echo "key=go-Linux-X64-$(go env GOVERSION)-check"[0m
+2026-10-30T02:44:49.6894407Z [36;1m} >> "$GITHUB_OUTPUT"[0m
+2026-10-30T02:44:49.6920519Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-30T02:44:49.6920901Z env:
+2026-10-30T02:44:49.6921104Z   LATEST_GO_VERSION: 1.27
+2026-10-30T02:44:49.6921470Z   CHECKOUT_ACTION: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+2026-10-30T02:44:49.6922025Z   SETUP_GO_ACTION: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+2026-10-30T02:44:49.6922566Z   CACHE_RESTORE_ACTION: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:49.6923108Z   CACHE_SAVE_ACTION: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:49.6923530Z   GOTOOLCHAIN: local
+2026-10-30T02:44:49.6923746Z ##[endgroup]
+2026-10-30T02:44:49.7174161Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:49.7174623Z with:
+2026-10-30T02:44:49.7174913Z   path: /home/runner/.cache/go-build
+/home/runner/go/pkg/mod
+
+2026-10-30T02:44:49.7175383Z   key: go-Linux-X64-go1.27.3-check-42d7b17d99c0678ac22fe44076a4c94769964fc6
+2026-10-30T02:44:49.7175802Z   restore-keys: go-Linux-X64-go1.27.3-check-
+2026-10-30T02:44:49.7176108Z   enableCrossOsArchive: false
+2026-10-30T02:44:49.7176370Z   fail-on-cache-miss: false
+2026-10-30T02:44:49.7176994Z   lookup-only: false
+2026-10-30T02:44:49.7177440Z env:
+2026-10-30T02:44:49.7177641Z   LATEST_GO_VERSION: 1.27
+2026-10-30T02:44:49.7177991Z   CHECKOUT_ACTION: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+2026-10-30T02:44:49.7178489Z   SETUP_GO_ACTION: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+2026-10-30T02:44:49.7179008Z   CACHE_RESTORE_ACTION: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:49.7179583Z   CACHE_SAVE_ACTION: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:49.7179986Z   GOTOOLCHAIN: local
+2026-10-30T02:44:49.7180216Z ##[endgroup]
+2026-10-30T02:44:50.0949013Z Cache not found for input keys: go-Linux-X64-go1.27.3-check-42d7b17d99c0678ac22fe44076a4c94769964fc6, go-Linux-X64-go1.27.3-check-
+2026-10-30T02:44:50.1047289Z ##[group]Run go install golang.org/x/lint/golint@latest
+2026-10-30T02:44:50.1047786Z [36;1mgo install golang.org/x/lint/golint@latest[0m
+2026-10-30T02:44:50.1048124Z [36;1mgolint -set_exit_status ./...[0m
+2026-10-30T02:44:50.1069277Z shell: /usr/bin/bash -e {0}
+2026-10-30T02:44:50.1069549Z env:
+2026-10-30T02:44:50.1069748Z   LATEST_GO_VERSION: 1.27
+2026-10-30T02:44:50.1070108Z   CHECKOUT_ACTION: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+2026-10-30T02:44:50.1070627Z   SETUP_GO_ACTION: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+2026-10-30T02:44:50.1071149Z   CACHE_RESTORE_ACTION: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:50.1071682Z   CACHE_SAVE_ACTION: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:50.1072073Z   GOTOOLCHAIN: local
+2026-10-30T02:44:50.1072287Z ##[endgroup]
+2026-10-30T02:44:50.4049309Z go: downloading golang.org/x/lint v0.0.0-20241112194109-818c5a804067
+2026-10-30T02:44:50.6554796Z go: downloading golang.org/x/tools v0.0.0-20200130002326-2f3ba24bd6e7
+2026-10-30T02:44:59.9097745Z ##[group]Run go install honnef.co/go/tools/cmd/staticcheck@latest
+2026-10-30T02:44:59.9098244Z [36;1mgo install honnef.co/go/tools/cmd/staticcheck@latest[0m
+2026-10-30T02:44:59.9098613Z [36;1mstaticcheck ./...[0m
+2026-10-30T02:44:59.9118798Z shell: /usr/bin/bash -e {0}
+2026-10-30T02:44:59.9119050Z env:
+2026-10-30T02:44:59.9119249Z   LATEST_GO_VERSION: 1.27
+2026-10-30T02:44:59.9119605Z   CHECKOUT_ACTION: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+2026-10-30T02:44:59.9120128Z   SETUP_GO_ACTION: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+2026-10-30T02:44:59.9120686Z   CACHE_RESTORE_ACTION: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:59.9121251Z   CACHE_SAVE_ACTION: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:44:59.9121650Z   GOTOOLCHAIN: local
+2026-10-30T02:44:59.9121870Z ##[endgroup]
+2026-10-30T02:45:00.1195294Z go: downloading honnef.co/go/tools v0.8.2
+2026-10-30T02:45:00.4515437Z go: downloading golang.org/x/tools v0.51.0
+2026-10-30T02:45:00.8508008Z go: downloading golang.org/x/exp/typeparams v0.0.0-20231108232855-2478ac86f678
+2026-10-30T02:45:00.8561389Z go: downloading github.com/BurntSushi/toml v1.4.1-0.20240526193622-a339e1f7089c
+2026-10-30T02:45:00.8597672Z go: downloading golang.org/x/sync v0.23.0
+2026-10-30T02:45:00.8884516Z go: downloading golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa
+2026-10-30T02:45:00.8941532Z go: downloading golang.org/x/mod v0.41.0
+2026-10-30T02:45:28.9888701Z ##[group]Run go version
+2026-10-30T02:45:28.9909004Z [36;1mgo version[0m
+2026-10-30T02:45:28.9909373Z [36;1mgo install golang.org/x/vuln/cmd/govulncheck@latest[0m
+2026-10-30T02:45:28.9909736Z [36;1mgovulncheck ./...[0m
+2026-10-30T02:45:28.9930758Z shell: /usr/bin/bash -e {0}
+2026-10-30T02:45:28.9931008Z env:
+2026-10-30T02:45:28.9931207Z   LATEST_GO_VERSION: 1.27
+2026-10-30T02:45:28.9931571Z   CHECKOUT_ACTION: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+2026-10-30T02:45:28.9932082Z   SETUP_GO_ACTION: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+2026-10-30T02:45:28.9932629Z   CACHE_RESTORE_ACTION: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:45:28.9933335Z   CACHE_SAVE_ACTION: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:45:28.9933723Z   GOTOOLCHAIN: local
+2026-10-30T02:45:28.9933934Z ##[endgroup]
+2026-10-30T02:45:29.0007265Z go version go1.27.3 linux/amd64
+2026-10-30T02:45:29.2096469Z go: downloading golang.org/x/vuln v1.9.0
+2026-10-30T02:45:29.3837682Z go: downloading golang.org/x/telemetry v0.0.0-20261010193011-f71dc92da45e
+2026-10-30T02:45:29.3894566Z go: downloading golang.org/x/mod v0.42.0
+2026-10-30T02:45:29.3898799Z go: downloading golang.org/x/tools v0.52.0
+2026-10-30T02:45:29.5380253Z go: downloading golang.org/x/sync v0.24.0
+2026-10-30T02:45:35.1127845Z No vulnerabilities found.
+2026-10-30T02:45:35.1753479Z ##[group]Run actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:45:35.1753878Z with:
+2026-10-30T02:45:35.1754161Z   path: /home/runner/.cache/go-build
+/home/runner/go/pkg/mod
+
+2026-10-30T02:45:35.1754621Z   key: go-Linux-X64-go1.27.3-check-42d7b17d99c0678ac22fe44076a4c94769964fc6
+2026-10-30T02:45:35.1755043Z   enableCrossOsArchive: false
+2026-10-30T02:45:35.1755280Z env:
+2026-10-30T02:45:35.1755463Z   LATEST_GO_VERSION: 1.27
+2026-10-30T02:45:35.1755802Z   CHECKOUT_ACTION: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+2026-10-30T02:45:35.1756284Z   SETUP_GO_ACTION: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+2026-10-30T02:45:35.1757067Z   CACHE_RESTORE_ACTION: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:45:35.1757600Z   CACHE_SAVE_ACTION: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-10-30T02:45:35.1757984Z   GOTOOLCHAIN: local
+2026-10-30T02:45:35.1758190Z ##[endgroup]
+2026-10-30T02:45:35.3389264Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/echo/echo --files-from manifest.txt --use-compress-program zstdmt
+2026-10-30T02:45:37.8570300Z Sent 23199744 of 109335228 (21.2%), 22.1 MBs/sec
+2026-10-30T02:45:38.8569442Z Sent 81854464 of 109335228 (74.9%), 39.1 MBs/sec
+2026-10-30T02:45:39.5168655Z Sent 109335228 of 109335228 (100.0%), 39.2 MBs/sec
+2026-10-30T02:45:39.7908691Z Cache saved with key: go-Linux-X64-go1.27.3-check-42d7b17d99c0678ac22fe44076a4c94769964fc6
+2026-10-30T02:45:39.8068634Z Post job cleanup.
+2026-10-30T02:45:39.9356455Z Post job cleanup.
+2026-10-30T02:45:40.0282980Z [command]/usr/bin/git version
+2026-10-30T02:45:40.0330273Z git version 2.56.0
+2026-10-30T02:45:40.0372046Z Temporarily overriding HOME='/home/runner/work/_temp/698dcfc3-998e-4beb-8f59-6a8456f274d4' before making global git config changes
+2026-10-30T02:45:40.0373587Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-30T02:45:40.0377922Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/echo/echo
+2026-10-30T02:45:40.0413139Z Removing SSH command configuration
+2026-10-30T02:45:40.0420156Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-30T02:45:40.0462475Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-30T02:45:40.0729755Z Removing HTTP extra header
+2026-10-30T02:45:40.0738835Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-30T02:45:40.0781717Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-30T02:45:40.1041847Z Removing includeIf entries pointing to credentials config files
+2026-10-30T02:45:40.1054391Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-30T02:45:40.1097557Z includeif.gitdir:/home/runner/work/echo/echo/.git.path
+2026-10-30T02:45:40.1100488Z includeif.gitdir:/home/runner/work/echo/echo/.git/worktrees/*.path
+2026-10-30T02:45:40.1102452Z includeif.gitdir:/github/workspace/.git.path
+2026-10-30T02:45:40.1103712Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-30T02:45:40.1116082Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/echo/echo/.git.path
+2026-10-30T02:45:40.1152523Z /home/runner/work/_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:45:40.1165894Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/echo/echo/.git.path /home/runner/work/_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:45:40.1225045Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/echo/echo/.git/worktrees/*.path
+2026-10-30T02:45:40.1265812Z /home/runner/work/_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:45:40.1283380Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/echo/echo/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:45:40.1340150Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-30T02:45:40.1384568Z /github/runner_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:45:40.1396912Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:45:40.1445745Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-30T02:45:40.1480530Z /github/runner_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:45:40.1490149Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config
+2026-10-30T02:45:40.1542175Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-30T02:45:40.1830719Z Removing credentials config '/home/runner/work/_temp/git-credentials-9a4f43cd-650a-4524-ab8d-5e50ab374918.config'
+2026-10-30T02:45:40.2020205Z Cleaning up orphan processes

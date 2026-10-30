@@ -1,0 +1,24 @@
+=== RUN   TestPublicScopedAddressSemantics
+=== RUN   TestPublicScopedAddressSemantics/uppercase-expanded
+=== RUN   TestPublicScopedAddressSemantics/compressed
+=== RUN   TestPublicScopedAddressSemantics/noncanonical-expanded
+=== RUN   TestPublicScopedAddressSemantics/IPv4-mapped
+=== RUN   TestPublicScopedAddressSemantics/IPv4-mapped-hex
+=== RUN   TestPublicScopedAddressSemantics/noncanonical-untrusted-header
+=== RUN   TestPublicScopedAddressSemantics/invalid-IPv4-zone
+=== RUN   TestPublicScopedAddressSemantics/malformed-IPv6
+=== RUN   TestPublicScopedAddressSemantics/empty-zone
+=== RUN   TestPublicScopedAddressSemantics/malformed-IPv4-mapped
+--- PASS: TestPublicScopedAddressSemantics (0.00s)
+    --- PASS: TestPublicScopedAddressSemantics/uppercase-expanded (0.00s)
+    --- PASS: TestPublicScopedAddressSemantics/compressed (0.00s)
+    --- PASS: TestPublicScopedAddressSemantics/noncanonical-expanded (0.00s)
+    --- PASS: TestPublicScopedAddressSemantics/IPv4-mapped (0.00s)
+    --- PASS: TestPublicScopedAddressSemantics/IPv4-mapped-hex (0.00s)
+    --- PASS: TestPublicScopedAddressSemantics/noncanonical-untrusted-header (0.00s)
+    --- PASS: TestPublicScopedAddressSemantics/invalid-IPv4-zone (0.00s)
+    --- PASS: TestPublicScopedAddressSemantics/malformed-IPv6 (0.00s)
+    --- PASS: TestPublicScopedAddressSemantics/empty-zone (0.00s)
+    --- PASS: TestPublicScopedAddressSemantics/malformed-IPv4-mapped (0.00s)
+PASS
+ok  	scoped-semantic-consumer	0.027s

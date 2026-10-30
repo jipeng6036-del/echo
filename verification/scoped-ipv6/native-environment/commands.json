@@ -1,0 +1,144 @@
+[
+  {
+    "name": "final-gofmt",
+    "args": [
+      "<user>\\AppData\\Local\\Temp\\github-pr-1541-go\\go1.27.3\\go\\bin\\gofmt.exe",
+      "-d",
+      "ip_http_test.go"
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:25:11.758155+00:00",
+    "end": "2026-10-30T02:25:11.782292+00:00",
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "final-baseline-http",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "test",
+      "-count=1",
+      "-run",
+      "TestRealIPScopedIPv6ThroughHTTP|TestSchemeScopedIPv6ThroughHTTP",
+      "-v",
+      "."
+    ],
+    "cwd": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\baseline",
+    "start": "2026-10-30T02:25:11.782661+00:00",
+    "end": "2026-10-30T02:25:13.627114+00:00",
+    "returncode": 1,
+    "expected": 1
+  },
+  {
+    "name": "final-candidate-focused",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "test",
+      "-count=1",
+      "-run",
+      "TestRealIPScopedIPv6ThroughHTTP|TestSchemeScopedIPv6ThroughHTTP|TestExtractIPFromXFFHeader",
+      "-v",
+      "."
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:25:13.627561+00:00",
+    "end": "2026-10-30T02:25:15.571181+00:00",
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "final-candidate-full",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "test",
+      "-count=1",
+      "-coverprofile=<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\final-windows-coverage.out",
+      "-covermode=atomic",
+      "./..."
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:25:15.571537+00:00",
+    "end": "2026-10-30T02:25:19.158371+00:00",
+    "returncode": 1,
+    "expected": 1
+  },
+  {
+    "name": "final-baseline-full",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "test",
+      "-count=1",
+      "-coverprofile=<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\final-baseline-coverage.out",
+      "-covermode=atomic",
+      "./..."
+    ],
+    "cwd": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\baseline",
+    "start": "2026-10-30T02:25:19.158769+00:00",
+    "end": "2026-10-30T02:25:22.929450+00:00",
+    "returncode": 1,
+    "expected": 1
+  },
+  {
+    "name": "final-vet",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "vet",
+      "./..."
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:25:22.929826+00:00",
+    "end": "2026-10-30T02:25:23.771907+00:00",
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "final-govulncheck",
+    "args": [
+      "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\bin\\govulncheck.exe",
+      "./..."
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:25:23.772309+00:00",
+    "end": "2026-10-30T02:25:30.270470+00:00",
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "final-staticcheck",
+    "args": [
+      "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\bin\\staticcheck.exe",
+      "./..."
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:25:30.271012+00:00",
+    "end": "2026-10-30T02:25:31.742897+00:00",
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "final-golint",
+    "args": [
+      "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\bin\\golint.exe",
+      "-set_exit_status",
+      "./..."
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:25:31.743552+00:00",
+    "end": "2026-10-30T02:25:32.340620+00:00",
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "name": "final-diff-check",
+    "args": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:25:32.341188+00:00",
+    "end": "2026-10-30T02:25:32.413480+00:00",
+    "returncode": 0,
+    "expected": 0
+  }
+]

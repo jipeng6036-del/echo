@@ -1,0 +1,90 @@
+{
+  "at": "2026-10-30T02:47:55.585714+00:00",
+  "status": "COMPLETE_ALL_EXPECTATIONS_MET",
+  "candidateCommit": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+  "candidateTree": "667325f667030f93e51f9aa3848525929e7937ab",
+  "modulePath": "github.com/labstack/echo/v5",
+  "candidateVersion": "v5.4.3-0.20261030023608-42d7b17d99c0",
+  "archiveCommand": "git -c core.autocrlf=false -c core.eol=lf -c tar.umask=0022 archive --format=tar COMMIT",
+  "archiveVerification": "All 159 candidate/158 baseline tracked paths, Git blob IDs, raw file bytes and permission modes match canonical TAR and ZIP. Official x/mod/zip.CheckZip passes. Downloaded cache ZIP hashes match artifacts; all extracted cache files match Git bytes.",
+  "scope": "Unpublished local build artifacts served by isolated file GOPROXY; these are NOT published upstream versions. No replace directive is present in any consumer. Proxy fallback for third-party dependencies is https://proxy.golang.org, no direct Git download.",
+  "runtimes": {
+    "windows": "Native go1.27.3 windows/amd64; no native race compiler",
+    "linux": "Cached golang:1.27.3-bookworm; go1.27.3 linux/amd64; race enabled",
+    "dockerImageId": "sha256:972b4110ba0f47539a975c31e52c64765e1ff19f2d74469ae4a595c6676e80a5"
+  },
+  "consumer": "Same 8 final committed public HTTP scenarios adapted only to external package imports and local fixture helper. Real TCP HTTP enters Echo routes, calls Context.RealIP / Context.Scheme, reads actual response. RemoteAddr is deliberately substituted server-side; no real OS link-local IPv6 routing is claimed.",
+  "runs": [
+    {
+      "platform": "windows",
+      "label": "candidate",
+      "version": "v5.4.3-0.20261030023608-42d7b17d99c0",
+      "moduleDir": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\module-zip-final\\cache-windows\\github.com\\labstack\\echo\\v5@v5.4.3-0.20261030023608-42d7b17d99c0",
+      "downloadedZipSHA256": "7f808f6ebe01c0d4fcd1c51dad67e20b8d2c16305e19fcf33d88211a11b6bbcd",
+      "moduleSum": "h1:zoHcljVaqojlP0qMH0xZqo5JtyQWwJMzxLG98XaywFE=",
+      "moduleCacheFileCount": 159,
+      "allExtractedFileBytesMatchGit": true,
+      "replaceAbsent": true,
+      "passSubtests": 8,
+      "failSubtests": 0,
+      "race": false,
+      "consumerRawSHA256": "b61a295343e2fa186702b536e56a932685fdd6faee760f2e35a6b47cea9f9bfc"
+    },
+    {
+      "platform": "windows",
+      "label": "baseline",
+      "version": "v5.4.3-0.20261029045006-4deac5da0714",
+      "moduleDir": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\module-zip-final\\cache-windows\\github.com\\labstack\\echo\\v5@v5.4.3-0.20261029045006-4deac5da0714",
+      "downloadedZipSHA256": "09e3fc3b9c2ffa611caca5c779ecac3bc994e6d1379621411b2146657654a5fb",
+      "moduleSum": "h1:h9PV5AaL0oTZ+1jDBcUSyXQwlw7wiMGwamyci+/DicM=",
+      "moduleCacheFileCount": 158,
+      "allExtractedFileBytesMatchGit": true,
+      "replaceAbsent": true,
+      "passSubtests": 5,
+      "failSubtests": 3,
+      "race": false,
+      "consumerRawSHA256": "b61a295343e2fa186702b536e56a932685fdd6faee760f2e35a6b47cea9f9bfc"
+    },
+    {
+      "platform": "linux",
+      "label": "candidate",
+      "version": "v5.4.3-0.20261030023608-42d7b17d99c0",
+      "moduleDir": "/evidence/cache-linux/github.com/labstack/echo/v5@v5.4.3-0.20261030023608-42d7b17d99c0",
+      "downloadedZipSHA256": "7f808f6ebe01c0d4fcd1c51dad67e20b8d2c16305e19fcf33d88211a11b6bbcd",
+      "moduleSum": "h1:zoHcljVaqojlP0qMH0xZqo5JtyQWwJMzxLG98XaywFE=",
+      "moduleCacheFileCount": 159,
+      "allExtractedFileBytesMatchGit": true,
+      "replaceAbsent": true,
+      "passSubtests": 8,
+      "failSubtests": 0,
+      "race": true,
+      "consumerRawSHA256": "b61a295343e2fa186702b536e56a932685fdd6faee760f2e35a6b47cea9f9bfc"
+    },
+    {
+      "platform": "linux",
+      "label": "baseline",
+      "version": "v5.4.3-0.20261029045006-4deac5da0714",
+      "moduleDir": "/evidence/cache-linux/github.com/labstack/echo/v5@v5.4.3-0.20261029045006-4deac5da0714",
+      "downloadedZipSHA256": "09e3fc3b9c2ffa611caca5c779ecac3bc994e6d1379621411b2146657654a5fb",
+      "moduleSum": "h1:h9PV5AaL0oTZ+1jDBcUSyXQwlw7wiMGwamyci+/DicM=",
+      "moduleCacheFileCount": 158,
+      "allExtractedFileBytesMatchGit": true,
+      "replaceAbsent": true,
+      "passSubtests": 5,
+      "failSubtests": 3,
+      "race": true,
+      "consumerRawSHA256": "b61a295343e2fa186702b536e56a932685fdd6faee760f2e35a6b47cea9f9bfc"
+    }
+  ],
+  "baselineExpectedFailures": [
+    "RealIP explicit CIDR peer with defaults disabled",
+    "RealIP repeated XFF fields/scoped hop",
+    "Scheme malformed IPv4 zone-like suffix rejection"
+  ],
+  "initialArtifactsExcluded": [
+    "candidate-initial-default-umask.tar had Git archive default 0664 modes",
+    "candidate-initial-native-eol.tar had Windows native text=auto CRLF exports; both kept only as failed-attempt evidence"
+  ],
+  "outboundActions": "none; no product-tree edits, branches, commits, pushes, fork objects or PRs",
+  "commands": "commands.json"
+}

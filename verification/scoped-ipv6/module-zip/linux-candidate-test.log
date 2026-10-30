@@ -1,0 +1,22 @@
+=== RUN   TestRealIPScopedIPv6ThroughHTTP
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/explicit_range_trusts_scoped_peer_with_default_trust_disabled
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/repeated_fields_stop_at_nearest_untrusted_scoped_hop
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/peer_outside_explicit_range_retains_zone_and_ignores_forged_chain
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/malformed_scoped_hop_rejects_entire_chain
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/empty_zone_rejects_entire_chain
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/malformed_scoped_peer_cannot_authorize_forwarding_headers
+--- PASS: TestRealIPScopedIPv6ThroughHTTP (0.01s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/explicit_range_trusts_scoped_peer_with_default_trust_disabled (0.00s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/repeated_fields_stop_at_nearest_untrusted_scoped_hop (0.00s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/peer_outside_explicit_range_retains_zone_and_ignores_forged_chain (0.00s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/malformed_scoped_hop_rejects_entire_chain (0.00s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/empty_zone_rejects_entire_chain (0.00s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/malformed_scoped_peer_cannot_authorize_forwarding_headers (0.00s)
+=== RUN   TestSchemeScopedIPv6ThroughHTTP
+=== RUN   TestSchemeScopedIPv6ThroughHTTP/trusted_scoped_peer_can_set_forwarded_scheme
+=== RUN   TestSchemeScopedIPv6ThroughHTTP/IPv4_with_zone-like_suffix_cannot_set_forwarded_scheme
+--- PASS: TestSchemeScopedIPv6ThroughHTTP (0.00s)
+    --- PASS: TestSchemeScopedIPv6ThroughHTTP/trusted_scoped_peer_can_set_forwarded_scheme (0.00s)
+    --- PASS: TestSchemeScopedIPv6ThroughHTTP/IPv4_with_zone-like_suffix_cannot_set_forwarded_scheme (0.00s)
+PASS
+ok  	scoped-ip-zip-consumer	1.025s

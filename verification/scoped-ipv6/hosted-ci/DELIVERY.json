@@ -1,0 +1,516 @@
+{
+  "at": "2026-10-30T02:54:41.981721+00:00",
+  "status": "VERIFIED_ALL_NINE_MATRIX_AND_QUALITY_SUCCESS",
+  "head": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+  "repository": "jipeng6036-del/echo",
+  "scope": "Own fork push CI; not upstream PR CI, maintainer approval, merge or release",
+  "runs": [
+    {
+      "id": 40993443277,
+      "name": "CI",
+      "path": ".github/workflows/ci.yml",
+      "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "head_branch": "master",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "run_attempt": 1,
+      "html_url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277"
+    },
+    {
+      "id": 40993443248,
+      "name": "Checks",
+      "path": ".github/workflows/checks.yml",
+      "head_sha": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "head_branch": "master",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "run_attempt": 1,
+      "html_url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443248"
+    }
+  ],
+  "jobsPagination": "CI total_count=10 and Checks total_count=1, all jobs fetched in one real page each with per_page=100 and filter=all",
+  "matrix": [
+    {
+      "jobId": 123861001008,
+      "name": "macos-latest @ Go 1.25",
+      "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861001008",
+      "rawLogSHA256": "a1f5288abe292ebe9b4ffb40d4ec7d7db56c84999629696d4847ced878ff8ee7",
+      "checkoutSHA": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "checkoutEvidenceLines": [
+        118,
+        130
+      ],
+      "actualGoVersions": [
+        [
+          "go1.25.14",
+          "darwin/arm64"
+        ]
+      ],
+      "osMatrix": "macos",
+      "goMatrix": "1.25",
+      "runTestsStep": {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:43Z",
+        "completed_at": "2026-10-30T02:45:06Z"
+      },
+      "packageResults": [
+        [
+          "github.com/labstack/echo/v5",
+          "2.706s\tcoverage: 96.4% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/echotest",
+          "1.082s\tcoverage: 93.7% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/middleware",
+          "5.100s\tcoverage: 94.6% of statements"
+        ]
+      ],
+      "raceExecuted": true,
+      "coverageExecuted": true
+    },
+    {
+      "jobId": 123861001191,
+      "name": "macos-latest @ Go 1.26",
+      "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861001191",
+      "rawLogSHA256": "37069e3fb1fe92ad6b4ca1721f7fe911deda1a5b4147728db28df5b0334cdbc0",
+      "checkoutSHA": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "checkoutEvidenceLines": [
+        118,
+        130
+      ],
+      "actualGoVersions": [
+        [
+          "go1.26.10",
+          "darwin/arm64"
+        ]
+      ],
+      "osMatrix": "macos",
+      "goMatrix": "1.26",
+      "runTestsStep": {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:51Z",
+        "completed_at": "2026-10-30T02:45:35Z"
+      },
+      "packageResults": [
+        [
+          "github.com/labstack/echo/v5",
+          "3.671s\tcoverage: 96.4% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/echotest",
+          "1.128s\tcoverage: 93.7% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/middleware",
+          "7.519s\tcoverage: 94.6% of statements"
+        ]
+      ],
+      "raceExecuted": true,
+      "coverageExecuted": true
+    },
+    {
+      "jobId": 123861000960,
+      "name": "macos-latest @ Go 1.27",
+      "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861000960",
+      "rawLogSHA256": "a9210f3a80a523001fbccf5c75e7f7483463a5c4c13440efd6ab2908ae59c38e",
+      "checkoutSHA": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "checkoutEvidenceLines": [
+        118,
+        130
+      ],
+      "actualGoVersions": [
+        [
+          "go1.27.3",
+          "darwin/arm64"
+        ]
+      ],
+      "osMatrix": "macos",
+      "goMatrix": "1.27",
+      "runTestsStep": {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:57Z",
+        "completed_at": "2026-10-30T02:45:21Z"
+      },
+      "packageResults": [
+        [
+          "github.com/labstack/echo/v5",
+          "2.777s\tcoverage: 96.4% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/echotest",
+          "1.030s\tcoverage: 93.7% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/middleware",
+          "4.830s\tcoverage: 94.6% of statements"
+        ]
+      ],
+      "raceExecuted": true,
+      "coverageExecuted": true
+    },
+    {
+      "jobId": 123861000959,
+      "name": "ubuntu-latest @ Go 1.25",
+      "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861000959",
+      "rawLogSHA256": "9a6f28a9b90b9c38d1c791213db1f618baaaf31300de5cca5bb3f6c3e01f46e9",
+      "checkoutSHA": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "checkoutEvidenceLines": [
+        117,
+        129
+      ],
+      "actualGoVersions": [
+        [
+          "go1.25.14",
+          "linux/amd64"
+        ]
+      ],
+      "osMatrix": "ubuntu",
+      "goMatrix": "1.25",
+      "runTestsStep": {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:44Z",
+        "completed_at": "2026-10-30T02:45:19Z"
+      },
+      "packageResults": [
+        [
+          "github.com/labstack/echo/v5",
+          "3.420s\tcoverage: 96.4% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/echotest",
+          "1.021s\tcoverage: 93.7% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/middleware",
+          "6.135s\tcoverage: 94.6% of statements"
+        ]
+      ],
+      "raceExecuted": true,
+      "coverageExecuted": true
+    },
+    {
+      "jobId": 123861000781,
+      "name": "ubuntu-latest @ Go 1.26",
+      "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861000781",
+      "rawLogSHA256": "60bd15b8858cb6d43e121b5e4d051264884b51e140b53ebf6834fbf4b3799961",
+      "checkoutSHA": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "checkoutEvidenceLines": [
+        117,
+        129
+      ],
+      "actualGoVersions": [
+        [
+          "go1.26.10",
+          "linux/amd64"
+        ]
+      ],
+      "osMatrix": "ubuntu",
+      "goMatrix": "1.26",
+      "runTestsStep": {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:43Z",
+        "completed_at": "2026-10-30T02:45:25Z"
+      },
+      "packageResults": [
+        [
+          "github.com/labstack/echo/v5",
+          "3.404s\tcoverage: 96.4% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/echotest",
+          "1.028s\tcoverage: 93.7% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/middleware",
+          "6.249s\tcoverage: 94.6% of statements"
+        ]
+      ],
+      "raceExecuted": true,
+      "coverageExecuted": true
+    },
+    {
+      "jobId": 123861000996,
+      "name": "ubuntu-latest @ Go 1.27",
+      "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861000996",
+      "rawLogSHA256": "5a9f59195c69a6e3c3d8e96ea4384c2c2f02f718b6e8a4563687ccc0079736cd",
+      "checkoutSHA": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "checkoutEvidenceLines": [
+        117,
+        129
+      ],
+      "actualGoVersions": [
+        [
+          "go1.27.3",
+          "linux/amd64"
+        ]
+      ],
+      "osMatrix": "ubuntu",
+      "goMatrix": "1.27",
+      "runTestsStep": {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:51Z",
+        "completed_at": "2026-10-30T02:45:18Z"
+      },
+      "packageResults": [
+        [
+          "github.com/labstack/echo/v5",
+          "2.933s\tcoverage: 96.4% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/echotest",
+          "1.015s\tcoverage: 93.7% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/middleware",
+          "5.145s\tcoverage: 94.6% of statements"
+        ]
+      ],
+      "raceExecuted": true,
+      "coverageExecuted": true
+    },
+    {
+      "jobId": 123861001005,
+      "name": "windows-latest @ Go 1.25",
+      "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861001005",
+      "rawLogSHA256": "5c2f7d0e1ed95b542b5de144766e2eb53c69a1856bb5ef220479d4fa4b1a65c7",
+      "checkoutSHA": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "checkoutEvidenceLines": [
+        104,
+        116
+      ],
+      "actualGoVersions": [
+        [
+          "go1.25.14",
+          "windows/amd64"
+        ]
+      ],
+      "osMatrix": "windows",
+      "goMatrix": "1.25",
+      "runTestsStep": {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:50Z",
+        "completed_at": "2026-10-30T02:45:32Z"
+      },
+      "packageResults": [
+        [
+          "github.com/labstack/echo/v5",
+          "2.907s\tcoverage: 96.5% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/echotest",
+          "1.130s\tcoverage: 93.7% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/middleware",
+          "4.284s\tcoverage: 94.6% of statements"
+        ]
+      ],
+      "raceExecuted": true,
+      "coverageExecuted": true
+    },
+    {
+      "jobId": 123861001057,
+      "name": "windows-latest @ Go 1.26",
+      "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861001057",
+      "rawLogSHA256": "1ab228ef428114e5fcb5e9d725e8fa3ae4cc2b5ffbfc6827cffb00f8a84f05bc",
+      "checkoutSHA": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "checkoutEvidenceLines": [
+        104,
+        116
+      ],
+      "actualGoVersions": [
+        [
+          "go1.26.10",
+          "windows/amd64"
+        ]
+      ],
+      "osMatrix": "windows",
+      "goMatrix": "1.26",
+      "runTestsStep": {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:44:54Z",
+        "completed_at": "2026-10-30T02:45:53Z"
+      },
+      "packageResults": [
+        [
+          "github.com/labstack/echo/v5",
+          "3.529s\tcoverage: 96.4% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/echotest",
+          "1.121s\tcoverage: 93.7% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/middleware",
+          "5.742s\tcoverage: 94.6% of statements"
+        ]
+      ],
+      "raceExecuted": true,
+      "coverageExecuted": true
+    },
+    {
+      "jobId": 123861001032,
+      "name": "windows-latest @ Go 1.27",
+      "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443277/job/123861001032",
+      "rawLogSHA256": "bbeba94862e69fee292ea574c7ff91117074cd3af593747d8de82b587fa028bb",
+      "checkoutSHA": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "checkoutEvidenceLines": [
+        104,
+        116
+      ],
+      "actualGoVersions": [
+        [
+          "go1.27.3",
+          "windows/amd64"
+        ]
+      ],
+      "osMatrix": "windows",
+      "goMatrix": "1.27",
+      "runTestsStep": {
+        "name": "Run Tests",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-10-30T02:45:11Z",
+        "completed_at": "2026-10-30T02:45:58Z"
+      },
+      "packageResults": [
+        [
+          "github.com/labstack/echo/v5",
+          "3.385s\tcoverage: 96.4% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/echotest",
+          "1.064s\tcoverage: 93.7% of statements"
+        ],
+        [
+          "github.com/labstack/echo/v5/middleware",
+          "5.299s\tcoverage: 94.6% of statements"
+        ]
+      ],
+      "raceExecuted": true,
+      "coverageExecuted": true
+    }
+  ],
+  "quality": [
+    {
+      "jobId": 123861000453,
+      "name": "check",
+      "url": "https://github.com/jipeng6036-del/echo/actions/runs/40993443248/job/123861000453",
+      "rawLogSHA256": "b390ed9494b184a012a89716cf7a233dd136f5ee644996cccd05ffb66be6933e",
+      "checkoutSHA": "42d7b17d99c0678ac22fe44076a4c94769964fc6",
+      "checkoutEvidenceLines": [
+        113,
+        125
+      ],
+      "actualGoVersions": [
+        [
+          "go1.27.3",
+          "linux/amd64"
+        ]
+      ],
+      "qualitySteps": [
+        {
+          "name": "Run golint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-30T02:44:50Z",
+          "completed_at": "2026-10-30T02:44:59Z"
+        },
+        {
+          "name": "Run staticcheck",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-30T02:44:59Z",
+          "completed_at": "2026-10-30T02:45:28Z"
+        },
+        {
+          "name": "Run govulncheck",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-30T02:45:28Z",
+          "completed_at": "2026-10-30T02:45:35Z"
+        }
+      ],
+      "govulncheckResult": "No vulnerabilities found.",
+      "zeroPackageWarningsAbsent": true,
+      "moduleScope": "./... at exact checked-out repository; same HEAD CI proves three nonempty packages",
+      "toolVersionsFromInstallLogs": {
+        "golint": "v0.0.0-20241112194109-818c5a804067",
+        "staticcheck": "v0.8.2",
+        "govulncheck": "v1.9.0"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "id": 123861480049,
+      "name": "Benchmark comparison",
+      "reason": "ci.yml benchmark.if requires pull_request; this run event is push",
+      "countedAsPass": false
+    }
+  ],
+  "workflowsUnchanged": [
+    {
+      "workflow": ".github/workflows/ci.yml",
+      "unchanged": true,
+      "baseline": {
+        "blob": "9036eee291d3077e04143b75a57c30d92cddcdcc",
+        "sha256": "e587901d35f4c54e5877424e8129ee893587e42a1f2b6374d064641c545e2374"
+      },
+      "candidate": {
+        "blob": "9036eee291d3077e04143b75a57c30d92cddcdcc",
+        "sha256": "e587901d35f4c54e5877424e8129ee893587e42a1f2b6374d064641c545e2374"
+      }
+    },
+    {
+      "workflow": ".github/workflows/checks.yml",
+      "unchanged": true,
+      "baseline": {
+        "blob": "a0daa6f3a7ed0321385506e5cf34265ef2c9231d",
+        "sha256": "7e34170ddd3f8aef7013d5c17cc064160759d1b0572bd4350669dcd27fc845c3"
+      },
+      "candidate": {
+        "blob": "a0daa6f3a7ed0321385506e5cf34265ef2c9231d",
+        "sha256": "7e34170ddd3f8aef7013d5c17cc064160759d1b0572bd4350669dcd27fc845c3"
+      }
+    }
+  ],
+  "rawLogFiles": 10,
+  "notes": [
+    "Original benchmark job is skipped by original pull_request-only condition on push; not counted as success. Existing local benchmark evidence remains separate.",
+    "Raw logs preserve terminal escapes. Analysis strips escapes without altering raw files. One initial gh CLI refusal was corrected using explicit --allow-escape-sequences within shared gate, no JSON parser retry.",
+    "No tests or Actions runs were rerun; no external write or source edit performed."
+  ]
+}

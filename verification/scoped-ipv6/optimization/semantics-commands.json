@@ -1,0 +1,54 @@
+[
+  {
+    "name": "semantics-source-tidy",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "mod",
+      "tidy"
+    ],
+    "cwd": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\optimization\\semantics-source",
+    "start": "2026-10-30T02:30:49.951807+00:00",
+    "end": "2026-10-30T02:30:50.145180+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "semantics-source-tests",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "test",
+      "-v",
+      "-count=1",
+      "./..."
+    ],
+    "cwd": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\optimization\\semantics-source",
+    "start": "2026-10-30T02:30:50.145226+00:00",
+    "end": "2026-10-30T02:30:51.270356+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "semantics-optimized-tidy",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "mod",
+      "tidy"
+    ],
+    "cwd": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\optimization\\semantics-optimized",
+    "start": "2026-10-30T02:30:51.271150+00:00",
+    "end": "2026-10-30T02:30:51.452952+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "semantics-optimized-tests",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "test",
+      "-v",
+      "-count=1",
+      "./..."
+    ],
+    "cwd": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\optimization\\semantics-optimized",
+    "start": "2026-10-30T02:30:51.452979+00:00",
+    "end": "2026-10-30T02:30:52.538939+00:00",
+    "returncode": 0
+  }
+]

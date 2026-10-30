@@ -1,0 +1,293 @@
+=== RUN   TestContext_Scheme
+=== RUN   TestContext_Scheme/defaults_to_http_without_TLS_or_headers
+=== RUN   TestContext_Scheme/returns_https_when_TLS_is_enabled
+=== RUN   TestContext_Scheme/TLS_takes_precedence_over_forwarded_proto
+=== RUN   TestContext_Scheme/uses_X-Forwarded-Proto_http
+=== RUN   TestContext_Scheme/uses_X-Forwarded-Proto_https
+=== RUN   TestContext_Scheme/X-Forwarded-Proto_is_case_insensitive
+=== RUN   TestContext_Scheme/uses_X-Forwarded-Proto_ws
+=== RUN   TestContext_Scheme/uses_X-Forwarded-Proto_wss
+=== RUN   TestContext_Scheme/invalid_X-Forwarded-Proto_falls_back_to_http,_not_to_other_headers
+=== RUN   TestContext_Scheme/uses_last_value_of_comma_separated_X-Forwarded-Proto_(added_by_the_nearest_proxy)
+=== RUN   TestContext_Scheme/uses_last_X-Forwarded-Proto_header_line_(added_by_the_nearest_proxy)
+=== RUN   TestContext_Scheme/X-Forwarded-Ssl_can_not_override_X-Forwarded-Proto_list
+=== RUN   TestContext_Scheme/uses_X-Forwarded-Protocol
+=== RUN   TestContext_Scheme/X-Forwarded-Proto_takes_precedence_over_X-Forwarded-Protocol
+=== RUN   TestContext_Scheme/uses_X-Forwarded-Ssl_on
+=== RUN   TestContext_Scheme/X-Forwarded-Ssl_on_is_case_sensitive
+=== RUN   TestContext_Scheme/X-Forwarded-Protocol_takes_precedence_over_X-Forwarded-Ssl
+=== RUN   TestContext_Scheme/uses_X-Url-Scheme
+=== RUN   TestContext_Scheme/X-Forwarded-Ssl_takes_precedence_over_X-Url-Scheme
+=== RUN   TestContext_Scheme/ignores_invalid_forwarded_headers_and_falls_back_to_http
+=== RUN   TestContext_Scheme/ignores_empty_forwarded_proto_and_uses_X-Url-Scheme
+=== RUN   TestContext_Scheme/ignores_X-Forwarded-Proto_from_untrusted_client
+=== RUN   TestContext_Scheme/ignores_X-Forwarded-Protocol_from_untrusted_client
+=== RUN   TestContext_Scheme/ignores_X-Forwarded-Ssl_from_untrusted_client
+=== RUN   TestContext_Scheme/ignores_X-Url-Scheme_from_untrusted_client
+=== RUN   TestContext_Scheme/returns_https_for_TLS_from_untrusted_client
+=== RUN   TestContext_Scheme/trusts_X-Forwarded-Proto_from_loopback
+=== RUN   TestContext_Scheme/trusts_X-Forwarded-Proto_from_IPv6_loopback
+=== RUN   TestContext_Scheme/trusts_X-Forwarded-Proto_from_unix_socket_peer
+=== RUN   TestContext_Scheme/ignores_X-Forwarded-Proto_from_unparsable_remote_address
+--- PASS: TestContext_Scheme (0.00s)
+    --- PASS: TestContext_Scheme/defaults_to_http_without_TLS_or_headers (0.00s)
+    --- PASS: TestContext_Scheme/returns_https_when_TLS_is_enabled (0.00s)
+    --- PASS: TestContext_Scheme/TLS_takes_precedence_over_forwarded_proto (0.00s)
+    --- PASS: TestContext_Scheme/uses_X-Forwarded-Proto_http (0.00s)
+    --- PASS: TestContext_Scheme/uses_X-Forwarded-Proto_https (0.00s)
+    --- PASS: TestContext_Scheme/X-Forwarded-Proto_is_case_insensitive (0.00s)
+    --- PASS: TestContext_Scheme/uses_X-Forwarded-Proto_ws (0.00s)
+    --- PASS: TestContext_Scheme/uses_X-Forwarded-Proto_wss (0.00s)
+    --- PASS: TestContext_Scheme/invalid_X-Forwarded-Proto_falls_back_to_http,_not_to_other_headers (0.00s)
+    --- PASS: TestContext_Scheme/uses_last_value_of_comma_separated_X-Forwarded-Proto_(added_by_the_nearest_proxy) (0.00s)
+    --- PASS: TestContext_Scheme/uses_last_X-Forwarded-Proto_header_line_(added_by_the_nearest_proxy) (0.00s)
+    --- PASS: TestContext_Scheme/X-Forwarded-Ssl_can_not_override_X-Forwarded-Proto_list (0.00s)
+    --- PASS: TestContext_Scheme/uses_X-Forwarded-Protocol (0.00s)
+    --- PASS: TestContext_Scheme/X-Forwarded-Proto_takes_precedence_over_X-Forwarded-Protocol (0.00s)
+    --- PASS: TestContext_Scheme/uses_X-Forwarded-Ssl_on (0.00s)
+    --- PASS: TestContext_Scheme/X-Forwarded-Ssl_on_is_case_sensitive (0.00s)
+    --- PASS: TestContext_Scheme/X-Forwarded-Protocol_takes_precedence_over_X-Forwarded-Ssl (0.00s)
+    --- PASS: TestContext_Scheme/uses_X-Url-Scheme (0.00s)
+    --- PASS: TestContext_Scheme/X-Forwarded-Ssl_takes_precedence_over_X-Url-Scheme (0.00s)
+    --- PASS: TestContext_Scheme/ignores_invalid_forwarded_headers_and_falls_back_to_http (0.00s)
+    --- PASS: TestContext_Scheme/ignores_empty_forwarded_proto_and_uses_X-Url-Scheme (0.00s)
+    --- PASS: TestContext_Scheme/ignores_X-Forwarded-Proto_from_untrusted_client (0.00s)
+    --- PASS: TestContext_Scheme/ignores_X-Forwarded-Protocol_from_untrusted_client (0.00s)
+    --- PASS: TestContext_Scheme/ignores_X-Forwarded-Ssl_from_untrusted_client (0.00s)
+    --- PASS: TestContext_Scheme/ignores_X-Url-Scheme_from_untrusted_client (0.00s)
+    --- PASS: TestContext_Scheme/returns_https_for_TLS_from_untrusted_client (0.00s)
+    --- PASS: TestContext_Scheme/trusts_X-Forwarded-Proto_from_loopback (0.00s)
+    --- PASS: TestContext_Scheme/trusts_X-Forwarded-Proto_from_IPv6_loopback (0.00s)
+    --- PASS: TestContext_Scheme/trusts_X-Forwarded-Proto_from_unix_socket_peer (0.00s)
+    --- PASS: TestContext_Scheme/ignores_X-Forwarded-Proto_from_unparsable_remote_address (0.00s)
+=== RUN   TestContext_RealIP
+=== RUN   TestContext_RealIP/ip_from_remote_addr
+=== RUN   TestContext_RealIP/ip_from_bare_remote_addr_without_port
+=== RUN   TestContext_RealIP/ip_from_bare_ipv6_remote_addr_without_port
+=== RUN   TestContext_RealIP/ip_from_ip_extractor
+--- PASS: TestContext_RealIP (0.00s)
+    --- PASS: TestContext_RealIP/ip_from_remote_addr (0.00s)
+    --- PASS: TestContext_RealIP/ip_from_bare_remote_addr_without_port (0.00s)
+    --- PASS: TestContext_RealIP/ip_from_bare_ipv6_remote_addr_without_port (0.00s)
+    --- PASS: TestContext_RealIP/ip_from_ip_extractor (0.00s)
+=== RUN   TestRealIPScopedIPv6ThroughHTTP
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/explicit_range_trusts_scoped_peer_with_default_trust_disabled
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/repeated_fields_stop_at_nearest_untrusted_scoped_hop
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/peer_outside_explicit_range_retains_zone_and_ignores_forged_chain
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/malformed_scoped_hop_rejects_entire_chain
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/empty_zone_rejects_entire_chain
+=== RUN   TestRealIPScopedIPv6ThroughHTTP/malformed_scoped_peer_cannot_authorize_forwarding_headers
+--- PASS: TestRealIPScopedIPv6ThroughHTTP (0.01s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/explicit_range_trusts_scoped_peer_with_default_trust_disabled (0.00s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/repeated_fields_stop_at_nearest_untrusted_scoped_hop (0.00s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/peer_outside_explicit_range_retains_zone_and_ignores_forged_chain (0.00s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/malformed_scoped_hop_rejects_entire_chain (0.00s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/empty_zone_rejects_entire_chain (0.00s)
+    --- PASS: TestRealIPScopedIPv6ThroughHTTP/malformed_scoped_peer_cannot_authorize_forwarding_headers (0.00s)
+=== RUN   TestSchemeScopedIPv6ThroughHTTP
+=== RUN   TestSchemeScopedIPv6ThroughHTTP/trusted_scoped_peer_can_set_forwarded_scheme
+=== RUN   TestSchemeScopedIPv6ThroughHTTP/IPv4_with_zone-like_suffix_cannot_set_forwarded_scheme
+--- PASS: TestSchemeScopedIPv6ThroughHTTP (0.00s)
+    --- PASS: TestSchemeScopedIPv6ThroughHTTP/trusted_scoped_peer_can_set_forwarded_scheme (0.00s)
+    --- PASS: TestSchemeScopedIPv6ThroughHTTP/IPv4_with_zone-like_suffix_cannot_set_forwarded_scheme (0.00s)
+=== RUN   TestIPChecker_TrustOption
+=== RUN   TestIPChecker_TrustOption/ip_is_within_trust_range,_trusts_additional_private_IPV6_network
+=== RUN   TestIPChecker_TrustOption/ip_is_within_trust_range,_trusts_additional_private_IPV6_network#01
+--- PASS: TestIPChecker_TrustOption (0.00s)
+    --- PASS: TestIPChecker_TrustOption/ip_is_within_trust_range,_trusts_additional_private_IPV6_network (0.00s)
+    --- PASS: TestIPChecker_TrustOption/ip_is_within_trust_range,_trusts_additional_private_IPV6_network#01 (0.00s)
+=== RUN   TestTrustIPRange
+=== RUN   TestTrustIPRange/ip_is_within_trust_range,_IPV6_network_range
+=== RUN   TestTrustIPRange/ip_is_outside_(upper_bounds)_of_trust_range,_IPV6_network_range
+=== RUN   TestTrustIPRange/ip_is_outside_(lower_bounds)_of_trust_range,_IPV6_network_range
+=== RUN   TestTrustIPRange/ip_is_within_trust_range,_IPV4_network_range
+=== RUN   TestTrustIPRange/ip_is_within_trust_range,_IPV4_network_range#01
+=== RUN   TestTrustIPRange/ip_is_outside_(upper_bounds)_of_trust_range,_IPV4_network_range
+=== RUN   TestTrustIPRange/ip_is_outside_(lower_bounds)_of_trust_range,_IPV4_network_range
+=== RUN   TestTrustIPRange/public_ip,_trust_everything_in_IPV4_network_range
+=== RUN   TestTrustIPRange/internal_ip,_trust_everything_in_IPV4_network_range
+=== RUN   TestTrustIPRange/public_ip,_trust_everything_in_IPV6_network_range
+=== RUN   TestTrustIPRange/internal_ip,_trust_everything_in_IPV6_network_range
+--- PASS: TestTrustIPRange (0.00s)
+    --- PASS: TestTrustIPRange/ip_is_within_trust_range,_IPV6_network_range (0.00s)
+    --- PASS: TestTrustIPRange/ip_is_outside_(upper_bounds)_of_trust_range,_IPV6_network_range (0.00s)
+    --- PASS: TestTrustIPRange/ip_is_outside_(lower_bounds)_of_trust_range,_IPV6_network_range (0.00s)
+    --- PASS: TestTrustIPRange/ip_is_within_trust_range,_IPV4_network_range (0.00s)
+    --- PASS: TestTrustIPRange/ip_is_within_trust_range,_IPV4_network_range#01 (0.00s)
+    --- PASS: TestTrustIPRange/ip_is_outside_(upper_bounds)_of_trust_range,_IPV4_network_range (0.00s)
+    --- PASS: TestTrustIPRange/ip_is_outside_(lower_bounds)_of_trust_range,_IPV4_network_range (0.00s)
+    --- PASS: TestTrustIPRange/public_ip,_trust_everything_in_IPV4_network_range (0.00s)
+    --- PASS: TestTrustIPRange/internal_ip,_trust_everything_in_IPV4_network_range (0.00s)
+    --- PASS: TestTrustIPRange/public_ip,_trust_everything_in_IPV6_network_range (0.00s)
+    --- PASS: TestTrustIPRange/internal_ip,_trust_everything_in_IPV6_network_range (0.00s)
+=== RUN   TestExtractIPDirect
+=== RUN   TestExtractIPDirect/request_has_no_headers,_extracts_IP_from_request_remote_addr
+=== RUN   TestExtractIPDirect/remote_addr_is_IP_without_port,_extracts_IP_directly
+=== RUN   TestExtractIPDirect/remote_addr_is_IPv6_without_port,_extracts_IP_directly
+=== RUN   TestExtractIPDirect/remote_addr_is_IPv6_with_port
+=== RUN   TestExtractIPDirect/remote_addr_is_invalid,_returns_empty_string
+=== RUN   TestExtractIPDirect/request_is_from_external_IP_has_X-Real-Ip_header,_extractor_still_extracts_IP_from_request_remote_addr
+=== RUN   TestExtractIPDirect/request_is_from_internal_IP_and_has_Real-IP_header,_extractor_still_extracts_internal_IP_from_request_remote_addr
+=== RUN   TestExtractIPDirect/request_is_from_external_IP_and_has_XFF_+_Real-IP_header,_extractor_still_extracts_external_IP_from_request_remote_addr
+=== RUN   TestExtractIPDirect/request_is_from_internal_IP_and_has_XFF_+_Real-IP_header,_extractor_still_extracts_internal_IP_from_request_remote_addr
+=== RUN   TestExtractIPDirect/request_is_from_external_IP_and_has_XFF_header,_extractor_still_extracts_external_IP_from_request_remote_addr
+=== RUN   TestExtractIPDirect/request_is_from_internal_IP_and_has_XFF_header,_extractor_still_extracts_internal_IP_from_request_remote_addr
+=== RUN   TestExtractIPDirect/request_is_from_internal_IP_and_has_INVALID_XFF_header,_extractor_still_extracts_internal_IP_from_request_remote_addr
+--- PASS: TestExtractIPDirect (0.00s)
+    --- PASS: TestExtractIPDirect/request_has_no_headers,_extracts_IP_from_request_remote_addr (0.00s)
+    --- PASS: TestExtractIPDirect/remote_addr_is_IP_without_port,_extracts_IP_directly (0.00s)
+    --- PASS: TestExtractIPDirect/remote_addr_is_IPv6_without_port,_extracts_IP_directly (0.00s)
+    --- PASS: TestExtractIPDirect/remote_addr_is_IPv6_with_port (0.00s)
+    --- PASS: TestExtractIPDirect/remote_addr_is_invalid,_returns_empty_string (0.00s)
+    --- PASS: TestExtractIPDirect/request_is_from_external_IP_has_X-Real-Ip_header,_extractor_still_extracts_IP_from_request_remote_addr (0.00s)
+    --- PASS: TestExtractIPDirect/request_is_from_internal_IP_and_has_Real-IP_header,_extractor_still_extracts_internal_IP_from_request_remote_addr (0.00s)
+    --- PASS: TestExtractIPDirect/request_is_from_external_IP_and_has_XFF_+_Real-IP_header,_extractor_still_extracts_external_IP_from_request_remote_addr (0.00s)
+    --- PASS: TestExtractIPDirect/request_is_from_internal_IP_and_has_XFF_+_Real-IP_header,_extractor_still_extracts_internal_IP_from_request_remote_addr (0.00s)
+    --- PASS: TestExtractIPDirect/request_is_from_external_IP_and_has_XFF_header,_extractor_still_extracts_external_IP_from_request_remote_addr (0.00s)
+    --- PASS: TestExtractIPDirect/request_is_from_internal_IP_and_has_XFF_header,_extractor_still_extracts_internal_IP_from_request_remote_addr (0.00s)
+    --- PASS: TestExtractIPDirect/request_is_from_internal_IP_and_has_INVALID_XFF_header,_extractor_still_extracts_internal_IP_from_request_remote_addr (0.00s)
+=== RUN   TestExtractIPFromRealIPHeader
+=== RUN   TestExtractIPFromRealIPHeader/request_has_no_headers,_extracts_IP_from_request_remote_addr
+=== RUN   TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_INVALID_external_X-Real-Ip_header,_extract_IP_from_remote_addr
+=== RUN   TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_valid_+_UNTRUSTED_external_X-Real-Ip_header,_extract_IP_from_remote_addr
+=== RUN   TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_valid_+_UNTRUSTED_external_X-Real-Ip_header,_extract_IP_from_remote_addr#01
+=== RUN   TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_valid_+_TRUSTED_X-Real-Ip_header,_extract_IP_from_X-Real-Ip_header
+=== RUN   TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_valid_+_TRUSTED_X-Real-Ip_header,_extract_IP_from_X-Real-Ip_header#01
+=== RUN   TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_XFF_and_valid_+_TRUSTED_X-Real-Ip_header,_extract_IP_from_X-Real-Ip_header
+=== RUN   TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_XFF_and_valid_+_TRUSTED_X-Real-Ip_header,_extract_IP_from_X-Real-Ip_header#01
+=== RUN   TestExtractIPFromRealIPHeader/request_is_from_untrusted_external_IP_attempting_to_spoof_loopback_in_X-Real-Ip,_extract_IP_from_remote_addr
+=== RUN   TestExtractIPFromRealIPHeader/request_is_from_untrusted_external_IP_attempting_to_spoof_private_network_in_X-Real-Ip,_extract_IP_from_remote_addr
+=== RUN   TestExtractIPFromRealIPHeader/request_is_from_trusted_proxy_forwarding_legitimate_public_IP_in_X-Real-Ip,_extract_IP_from_X-Real-Ip_header
+=== RUN   TestExtractIPFromRealIPHeader/request_is_from_trusted_private_network_proxy_forwarding_legitimate_public_IP_in_X-Real-Ip,_extract_IP_from_X-Real-Ip_header
+--- PASS: TestExtractIPFromRealIPHeader (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_has_no_headers,_extracts_IP_from_request_remote_addr (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_INVALID_external_X-Real-Ip_header,_extract_IP_from_remote_addr (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_valid_+_UNTRUSTED_external_X-Real-Ip_header,_extract_IP_from_remote_addr (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_valid_+_UNTRUSTED_external_X-Real-Ip_header,_extract_IP_from_remote_addr#01 (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_valid_+_TRUSTED_X-Real-Ip_header,_extract_IP_from_X-Real-Ip_header (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_valid_+_TRUSTED_X-Real-Ip_header,_extract_IP_from_X-Real-Ip_header#01 (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_XFF_and_valid_+_TRUSTED_X-Real-Ip_header,_extract_IP_from_X-Real-Ip_header (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_is_from_external_IP_has_XFF_and_valid_+_TRUSTED_X-Real-Ip_header,_extract_IP_from_X-Real-Ip_header#01 (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_is_from_untrusted_external_IP_attempting_to_spoof_loopback_in_X-Real-Ip,_extract_IP_from_remote_addr (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_is_from_untrusted_external_IP_attempting_to_spoof_private_network_in_X-Real-Ip,_extract_IP_from_remote_addr (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_is_from_trusted_proxy_forwarding_legitimate_public_IP_in_X-Real-Ip,_extract_IP_from_X-Real-Ip_header (0.00s)
+    --- PASS: TestExtractIPFromRealIPHeader/request_is_from_trusted_private_network_proxy_forwarding_legitimate_public_IP_in_X-Real-Ip,_extract_IP_from_X-Real-Ip_header (0.00s)
+=== RUN   TestExtractIPFromXFFHeader
+=== RUN   TestExtractIPFromXFFHeader/request_has_no_headers,_extracts_IP_from_request_remote_addr
+=== RUN   TestExtractIPFromXFFHeader/request_has_INVALID_external_XFF_header,_extract_IP_from_remote_addr
+=== RUN   TestExtractIPFromXFFHeader/request_trusts_all_IPs_in_XFF_header,_extract_IP_from_furthest_in_XFF_chain
+=== RUN   TestExtractIPFromXFFHeader/request_trusts_all_IPs_in_XFF_header,_extract_IP_from_furthest_in_XFF_chain#01
+=== RUN   TestExtractIPFromXFFHeader/request_from_link-local_proxy_with_IPv6_zone_in_remote_addr,_extract_IP_from_XFF_header
+=== RUN   TestExtractIPFromXFFHeader/request_trusts_all_IPs_in_XFF_header_with_IPv6_zones,_extract_IP_from_furthest_in_XFF_chain
+=== RUN   TestExtractIPFromXFFHeader/request_from_untrusted_link-local_peer_with_IPv6_zone_in_remote_addr,_extract_IP_from_remote_addr
+=== RUN   TestExtractIPFromXFFHeader/request_has_IPv4_address_with_zone-like_suffix_in_XFF_header,_extract_IP_from_remote_addr
+=== RUN   TestExtractIPFromXFFHeader/request_is_from_external_IP_has_valid_+_UNTRUSTED_external_XFF_header,_extract_IP_from_remote_addr
+=== RUN   TestExtractIPFromXFFHeader/request_is_from_external_IP_has_valid_+_UNTRUSTED_external_XFF_header,_extract_IP_from_remote_addr#01
+=== RUN   TestExtractIPFromXFFHeader/request_is_from_external_IP_is_valid_and_has_some_IPs_TRUSTED_XFF_header,_extract_IP_from_XFF_header
+=== RUN   TestExtractIPFromXFFHeader/request_is_from_external_IP_is_valid_and_has_some_IPs_TRUSTED_XFF_header,_extract_IP_from_XFF_header#01
+--- PASS: TestExtractIPFromXFFHeader (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_has_no_headers,_extracts_IP_from_request_remote_addr (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_has_INVALID_external_XFF_header,_extract_IP_from_remote_addr (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_trusts_all_IPs_in_XFF_header,_extract_IP_from_furthest_in_XFF_chain (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_trusts_all_IPs_in_XFF_header,_extract_IP_from_furthest_in_XFF_chain#01 (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_from_link-local_proxy_with_IPv6_zone_in_remote_addr,_extract_IP_from_XFF_header (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_trusts_all_IPs_in_XFF_header_with_IPv6_zones,_extract_IP_from_furthest_in_XFF_chain (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_from_untrusted_link-local_peer_with_IPv6_zone_in_remote_addr,_extract_IP_from_remote_addr (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_has_IPv4_address_with_zone-like_suffix_in_XFF_header,_extract_IP_from_remote_addr (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_is_from_external_IP_has_valid_+_UNTRUSTED_external_XFF_header,_extract_IP_from_remote_addr (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_is_from_external_IP_has_valid_+_UNTRUSTED_external_XFF_header,_extract_IP_from_remote_addr#01 (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_is_from_external_IP_is_valid_and_has_some_IPs_TRUSTED_XFF_header,_extract_IP_from_XFF_header (0.00s)
+    --- PASS: TestExtractIPFromXFFHeader/request_is_from_external_IP_is_valid_and_has_some_IPs_TRUSTED_XFF_header,_extract_IP_from_XFF_header#01 (0.00s)
+=== RUN   TestLegacyIPExtractor
+=== RUN   TestLegacyIPExtractor/extract_first_ip_from_X-Forwarded-For
+=== RUN   TestLegacyIPExtractor/extract_single_ip_from_X-Forwarded-For
+=== RUN   TestLegacyIPExtractor/trim_brackets_from_ipv6_in_X-Forwarded-For_when_multiple_values
+=== RUN   TestLegacyIPExtractor/prefer_X-Forwarded-For_over_X-Real-Ip
+=== RUN   TestLegacyIPExtractor/extract_from_X-Real-Ip
+=== RUN   TestLegacyIPExtractor/extract_plain_ipv4_from_X-Real-Ip
+=== RUN   TestLegacyIPExtractor/fallback_to_RemoteAddr_host
+=== RUN   TestLegacyIPExtractor/fallback_to_RemoteAddr_ipv6_host
+=== RUN   TestLegacyIPExtractor/returns_empty_string_when_RemoteAddr_is_invalid_and_no_headers_exist
+=== RUN   TestLegacyIPExtractor/trim_brackets_from_single_ipv6_in_X-Forwarded-For
+--- PASS: TestLegacyIPExtractor (0.00s)
+    --- PASS: TestLegacyIPExtractor/extract_first_ip_from_X-Forwarded-For (0.00s)
+    --- PASS: TestLegacyIPExtractor/extract_single_ip_from_X-Forwarded-For (0.00s)
+    --- PASS: TestLegacyIPExtractor/trim_brackets_from_ipv6_in_X-Forwarded-For_when_multiple_values (0.00s)
+    --- PASS: TestLegacyIPExtractor/prefer_X-Forwarded-For_over_X-Real-Ip (0.00s)
+    --- PASS: TestLegacyIPExtractor/extract_from_X-Real-Ip (0.00s)
+    --- PASS: TestLegacyIPExtractor/extract_plain_ipv4_from_X-Real-Ip (0.00s)
+    --- PASS: TestLegacyIPExtractor/fallback_to_RemoteAddr_host (0.00s)
+    --- PASS: TestLegacyIPExtractor/fallback_to_RemoteAddr_ipv6_host (0.00s)
+    --- PASS: TestLegacyIPExtractor/returns_empty_string_when_RemoteAddr_is_invalid_and_no_headers_exist (0.00s)
+    --- PASS: TestLegacyIPExtractor/trim_brackets_from_single_ipv6_in_X-Forwarded-For (0.00s)
+=== RUN   TestExtractSchemeDirect
+=== RUN   TestExtractSchemeDirect/returns_https_for_TLS
+=== RUN   TestExtractSchemeDirect/returns_http_without_TLS
+=== RUN   TestExtractSchemeDirect/ignores_forwarding_headers_even_from_trusted_network
+--- PASS: TestExtractSchemeDirect (0.00s)
+    --- PASS: TestExtractSchemeDirect/returns_https_for_TLS (0.00s)
+    --- PASS: TestExtractSchemeDirect/returns_http_without_TLS (0.00s)
+    --- PASS: TestExtractSchemeDirect/ignores_forwarding_headers_even_from_trusted_network (0.00s)
+=== RUN   TestExtractSchemeFromHeaders
+=== RUN   TestExtractSchemeFromHeaders/trusts_private_network_by_default
+=== RUN   TestExtractSchemeFromHeaders/trusts_loopback_by_default
+=== RUN   TestExtractSchemeFromHeaders/trusts_link-local_by_default
+=== RUN   TestExtractSchemeFromHeaders/trusts_IPv6_link-local_address_with_zone_by_default
+=== RUN   TestExtractSchemeFromHeaders/trusts_unix_socket_peer_by_default_(Linux)
+=== RUN   TestExtractSchemeFromHeaders/trusts_unix_socket_peer_by_default_(Linux_abstract_socket)
+=== RUN   TestExtractSchemeFromHeaders/trusts_unix_socket_peer_by_default_(bound_socket_path)
+=== RUN   TestExtractSchemeFromHeaders/trusts_unix_socket_peer_by_default_(unnamed)
+=== RUN   TestExtractSchemeFromHeaders/trusts_private_address_without_port
+=== RUN   TestExtractSchemeFromHeaders/does_not_trust_public_address_by_default
+=== RUN   TestExtractSchemeFromHeaders/does_not_trust_unparsable_remote_address
+=== RUN   TestExtractSchemeFromHeaders/returns_https_for_TLS_from_public_address
+=== RUN   TestExtractSchemeFromHeaders/trusts_public_address_in_configured_range
+=== RUN   TestExtractSchemeFromHeaders/does_not_trust_private_network_when_disabled
+=== RUN   TestExtractSchemeFromHeaders/does_not_trust_loopback_when_disabled
+=== RUN   TestExtractSchemeFromHeaders/does_not_trust_unix_socket_peer_when_loopback_is_disabled
+=== RUN   TestExtractSchemeFromHeaders/does_not_trust_link-local_when_disabled
+--- PASS: TestExtractSchemeFromHeaders (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/trusts_private_network_by_default (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/trusts_loopback_by_default (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/trusts_link-local_by_default (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/trusts_IPv6_link-local_address_with_zone_by_default (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/trusts_unix_socket_peer_by_default_(Linux) (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/trusts_unix_socket_peer_by_default_(Linux_abstract_socket) (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/trusts_unix_socket_peer_by_default_(bound_socket_path) (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/trusts_unix_socket_peer_by_default_(unnamed) (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/trusts_private_address_without_port (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/does_not_trust_public_address_by_default (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/does_not_trust_unparsable_remote_address (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/returns_https_for_TLS_from_public_address (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/trusts_public_address_in_configured_range (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/does_not_trust_private_network_when_disabled (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/does_not_trust_loopback_when_disabled (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/does_not_trust_unix_socket_peer_when_loopback_is_disabled (0.00s)
+    --- PASS: TestExtractSchemeFromHeaders/does_not_trust_link-local_when_disabled (0.00s)
+=== RUN   TestLegacySchemeExtractor
+=== RUN   TestLegacySchemeExtractor/returns_https_for_TLS
+=== RUN   TestLegacySchemeExtractor/trusts_X-Forwarded-Proto_from_public_address
+=== RUN   TestLegacySchemeExtractor/still_rejects_invalid_values
+--- PASS: TestLegacySchemeExtractor (0.00s)
+    --- PASS: TestLegacySchemeExtractor/returns_https_for_TLS (0.00s)
+    --- PASS: TestLegacySchemeExtractor/trusts_X-Forwarded-Proto_from_public_address (0.00s)
+    --- PASS: TestLegacySchemeExtractor/still_rejects_invalid_values (0.00s)
+=== RUN   TestContext_Scheme_usesEchoSchemeExtractor
+--- PASS: TestContext_Scheme_usesEchoSchemeExtractor (0.00s)
+=== RUN   TestNewWithConfig_SchemeExtractor
+--- PASS: TestNewWithConfig_SchemeExtractor (0.00s)
+PASS
+ok  	github.com/labstack/echo/v5	0.064s
+testing: warning: no tests to run
+PASS
+ok  	github.com/labstack/echo/v5/echotest	0.030s [no tests to run]
+=== RUN   Test_allowOriginScheme
+--- PASS: Test_allowOriginScheme (0.00s)
+=== RUN   TestProxyRealIPHeader
+--- PASS: TestProxyRealIPHeader (0.00s)
+=== RUN   TestProxyRemovesOtherSchemeHeaders
+--- PASS: TestProxyRemovesOtherSchemeHeaders (0.00s)
+=== RUN   Test_matchScheme
+--- PASS: Test_matchScheme (0.00s)
+PASS
+ok  	github.com/labstack/echo/v5/middleware	0.058s

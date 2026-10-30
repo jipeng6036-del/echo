@@ -1,0 +1,173 @@
+[
+  {
+    "name": "source-related-tests",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "test",
+      "-count=1",
+      "-v",
+      "-run",
+      "IP|Scheme",
+      "./..."
+    ],
+    "cwd": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\source-pr-control",
+    "start": "2026-10-30T02:31:16.990980+00:00",
+    "end": "2026-10-30T02:31:19.132966+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "optimized-related-tests",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "test",
+      "-count=1",
+      "-v",
+      "-run",
+      "IP|Scheme",
+      "./..."
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:31:19.133402+00:00",
+    "end": "2026-10-30T02:31:21.327632+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "optimized-vet",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "vet",
+      "./..."
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:31:21.328369+00:00",
+    "end": "2026-10-30T02:31:22.240599+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "optimized-govulncheck",
+    "args": [
+      "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\bin\\govulncheck.exe",
+      "./..."
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:31:23.125976+00:00",
+    "end": "2026-10-30T02:31:30.062332+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "optimized-staticcheck",
+    "args": [
+      "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\bin\\staticcheck.exe",
+      "./..."
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:31:30.063248+00:00",
+    "end": "2026-10-30T02:31:31.720448+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "optimized-golint",
+    "args": [
+      "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\bin\\golint.exe",
+      "-set_exit_status",
+      "./..."
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:31:31.721081+00:00",
+    "end": "2026-10-30T02:31:32.244519+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "optimized-gofmt",
+    "args": [
+      "<user>\\AppData\\Local\\Temp\\github-pr-1541-go\\go1.27.3\\go\\bin\\gofmt.exe",
+      "-d",
+      "ip.go",
+      "ip_http_test.go"
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:31:32.245183+00:00",
+    "end": "2026-10-30T02:31:32.277123+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "optimized-diff-check",
+    "args": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:31:32.277732+00:00",
+    "end": "2026-10-30T02:31:32.330918+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "benchmark-source-tidy",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "mod",
+      "tidy"
+    ],
+    "cwd": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\optimization\\benchmark-source",
+    "start": "2026-10-30T02:31:32.333249+00:00",
+    "end": "2026-10-30T02:31:32.512387+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "benchmark-source",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "test",
+      "-run=-",
+      "-bench=.*",
+      "-benchtime=100ms",
+      "-count=8",
+      "./..."
+    ],
+    "cwd": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\optimization\\benchmark-source",
+    "start": "2026-10-30T02:31:32.513057+00:00",
+    "end": "2026-10-30T02:31:36.319457+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "benchmark-optimized-tidy",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "mod",
+      "tidy"
+    ],
+    "cwd": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\optimization\\benchmark-optimized",
+    "start": "2026-10-30T02:31:36.321384+00:00",
+    "end": "2026-10-30T02:31:36.518181+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "benchmark-optimized",
+    "args": [
+      "<user>/AppData/Local/Temp/github-pr-1541-go/go1.27.3/go/bin/go.exe",
+      "test",
+      "-run=-",
+      "-bench=.*",
+      "-benchtime=100ms",
+      "-count=8",
+      "./..."
+    ],
+    "cwd": "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\optimization\\benchmark-optimized",
+    "start": "2026-10-30T02:31:36.519145+00:00",
+    "end": "2026-10-30T02:31:40.469785+00:00",
+    "returncode": 0
+  },
+  {
+    "name": "benchmark-comparison",
+    "args": [
+      "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\bin\\benchstat.exe",
+      "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\optimization\\benchmark-source.log",
+      "<workspace>\\ci-evidence\\pr4-discovery-20261030-0205\\lane-go\\optimization\\benchmark-optimized.log"
+    ],
+    "cwd": "<workspace>\\inspection\\pr4-echo-scoped-ip-3179",
+    "start": "2026-10-30T02:31:40.470503+00:00",
+    "end": "2026-10-30T02:31:40.497715+00:00",
+    "returncode": 0
+  }
+]

@@ -1,0 +1,30 @@
+goos: windows
+goarch: amd64
+pkg: scoped-ip-benchmark
+cpu: 13th Gen Intel(R) Core(TM) i7-13700F
+BenchmarkXFFIPv4-4            	  726171	       142.8 ns/op	      64 B/op	       3 allocs/op
+BenchmarkXFFIPv4-4            	  891397	       140.5 ns/op	      64 B/op	       3 allocs/op
+BenchmarkXFFIPv4-4            	  866362	       139.2 ns/op	      64 B/op	       3 allocs/op
+BenchmarkXFFIPv4-4            	  885608	       140.0 ns/op	      64 B/op	       3 allocs/op
+BenchmarkXFFIPv4-4            	  895254	       140.8 ns/op	      64 B/op	       3 allocs/op
+BenchmarkXFFIPv4-4            	  823327	       141.3 ns/op	      64 B/op	       3 allocs/op
+BenchmarkXFFIPv4-4            	  848775	       141.8 ns/op	      64 B/op	       3 allocs/op
+BenchmarkXFFIPv4-4            	  881574	       141.5 ns/op	      64 B/op	       3 allocs/op
+BenchmarkXFFScopedIPv6-4      	  381000	       290.3 ns/op	      72 B/op	       4 allocs/op
+BenchmarkXFFScopedIPv6-4      	  424477	       287.9 ns/op	      72 B/op	       4 allocs/op
+BenchmarkXFFScopedIPv6-4      	  407234	       292.6 ns/op	      72 B/op	       4 allocs/op
+BenchmarkXFFScopedIPv6-4      	  415152	       291.3 ns/op	      72 B/op	       4 allocs/op
+BenchmarkXFFScopedIPv6-4      	  410733	       289.2 ns/op	      72 B/op	       4 allocs/op
+BenchmarkXFFScopedIPv6-4      	  416623	       289.2 ns/op	      72 B/op	       4 allocs/op
+BenchmarkXFFScopedIPv6-4      	  414879	       288.0 ns/op	      72 B/op	       4 allocs/op
+BenchmarkXFFScopedIPv6-4      	  390714	       291.2 ns/op	      72 B/op	       4 allocs/op
+BenchmarkSchemeScopedIPv6-4   	  641676	       187.9 ns/op	       8 B/op	       1 allocs/op
+BenchmarkSchemeScopedIPv6-4   	  642500	       187.6 ns/op	       8 B/op	       1 allocs/op
+BenchmarkSchemeScopedIPv6-4   	  593324	       190.2 ns/op	       8 B/op	       1 allocs/op
+BenchmarkSchemeScopedIPv6-4   	  639249	       188.2 ns/op	       8 B/op	       1 allocs/op
+BenchmarkSchemeScopedIPv6-4   	  619482	       188.0 ns/op	       8 B/op	       1 allocs/op
+BenchmarkSchemeScopedIPv6-4   	  658941	       185.4 ns/op	       8 B/op	       1 allocs/op
+BenchmarkSchemeScopedIPv6-4   	  654378	       186.1 ns/op	       8 B/op	       1 allocs/op
+BenchmarkSchemeScopedIPv6-4   	  645542	       188.1 ns/op	       8 B/op	       1 allocs/op
+PASS
+ok  	scoped-ip-benchmark	2.895s
